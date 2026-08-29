@@ -1,0 +1,142 @@
+  .setores {
+      position: absolute;
+      top: 29%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+  }
+
+  .nav-setores {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 94%;
+      height:70%;
+
+  }
+
+  .contein-setores {
+      position: absolute;
+      top: 0;
+      left: 0;
+      gap: 8px;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      width: 100%;
+      height: 70%;
+
+  }
+
+/* ===== CARD ===== */
+.card-setores {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 24.4%;
+    height: 48%;
+    border-radius: var(--borda-setores);
+    text-decoration: none;
+    color: inherit;
+            border-radius: var(--borda-setores);
+}
+
+/* ===== IMAGEM (fundo) ===== */
+.img-setor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+            border-radius: var(--borda-setores);
+
+
+}
+
+.img-setor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+            border-radius: var(--borda-setores);
+
+}
+
+.img-setor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+            border-radius: var(--borda-setores);
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.4) 50%,
+        rgba(0,0,0,0.1) 100%
+    );
+    z-index: 2;
+}
+
+/* ===== CONTEÚDO (por cima de tudo) ===== */
+.conteudo-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--borda-setores);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nome-setor {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    margin: 0 0 8px 0;
+    color: var(--letras-brancas);
+    font-size: 20px;
+}
+
+.descricao-setor {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    margin: 0 0 16px 0;
+    color: #ddd;
+    font-size: 15px;
+}
+
+.ns-set-btn {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    display: inline-block;
+    width: fit-content;
+    font-size: 10px;
+    background: var(--letras-brancas);
+    color: var(--letras-escuras);
+    padding: 10px 16px;
+    border-radius: 25px;
+}
+
+.borda-setores {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 99%;
+    height: 99%;
+    border: 2px solid var(--letra-laranja);
+    z-index: 5;
+        border-radius: var(--borda-setores);
+}    

@@ -1,0 +1,106 @@
+  .main-nav {
+    background: var(--barra-nav);
+    position: fixed;
+    width: 100%;
+    height: 10.1%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .main-nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  /* Logo */
+  .logo-pagina {
+    margin-left: -1%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  /* Nav Links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+  }
+
+  .nav-links li {
+    position: relative;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--letras-barra-nav);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--laranja);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .nav-links a:hover {
+    color: var(--laranja);
+  }
+
+  .nav-links a:hover::after {
+    width: 60%;
+  }
+
+  .nav-links a.active {
+    color: var(--laranja);
+  }
+
+  .nav-links a.active::after {
+    width: 60%;
+  }
+
+  /* CTA Button */
+  .cta-btn {
+    font-size: 13px !important;
+
+    background: var(--laranja);
+    color: var(--letras-escuras) !important;
+    padding: 10px 22px !important;
+    border-radius: 25px !important;
+    transition: all 0.3s ease !important;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  .cta-btn::after {
+    display: none !important;
+  }
+
+  .cta-btn:hover {
+    background: var(--laranja-hover);
+  }

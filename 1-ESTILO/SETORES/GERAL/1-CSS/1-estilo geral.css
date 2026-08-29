@@ -1,0 +1,38 @@
+  :root {
+    --laranja: rgb(252, 201, 34);
+    --laranja-hover: rgb(255, 217, 92);
+    --barra-nav: linear-gradient(0, #ffffff00 0%, rgb(0, 0, 0) 100%);
+    --letras-barra-nav: rgb(255, 255, 255);
+    --fundo: rgb(245, 245, 245);
+    --letras-escuras: #1a1a2e;
+    --fundo-serviços: rgb(255, 255, 255);
+    --divisa-serviços: #e0e0e0;
+
+    --letras-cinzas: #666;
+    --letras-brancas: rgb(255, 255, 255);
+    --letra-laranja: rgb(252, 201, 34);
+    /*--letra-laranja: #EB7601;*/
+
+    --fundo-rodape: rgb(5, 4, 4);
+    --borda-botão: 1px solid rgb(163, 163, 163);
+    --branco: white;
+    --prata: #ccc;
+    --preto: black;
+    --cobalto: #2a2e38;
+    --verde-esmeralda: #4ade80;
+
+    --borda-setores: 7px;
+  }
+
+  body {
+    background: var(--fundo);
+  }
+
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }

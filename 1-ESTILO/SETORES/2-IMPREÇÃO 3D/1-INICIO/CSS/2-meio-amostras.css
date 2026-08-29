@@ -1,0 +1,209 @@
+.meio-2 {
+  position: absolute;
+  top: 130%;
+  left: 0;
+  width: 100%;
+}
+
+.pd-container {
+      background: var(--fundo-rodape);
+      border-radius: 16px;
+      padding: 32px 24px;
+      margin: 0 auto;
+    }
+
+    .pd-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .pd-header h2 {
+      color: var(--letras-brancas);
+      letter-spacing: 1px;
+      margin: 0;
+
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .pd-header h2 span {
+      color: var(--letra-laranja);
+      border-bottom: 2px solid var(--letra-laranja);
+      padding-bottom: 4px;
+    }
+
+    .pd-shuffle-btn {
+      display: block;
+      margin: 0 auto 20px auto;
+      background: linear-gradient(135deg, var(--laranja), var(--laranja-hover));
+      color: var(--letras-brancas);
+      border: none;
+      border-radius: 8px;
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 14px rgba(249,115,22,0.3);
+    }
+
+    .pd-shuffle-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(249,115,22,0.4);
+    }
+
+    .pd-shuffle-btn:active {
+      transform: scale(0.98);
+    }
+
+    .pd-carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pd-carousel {
+      display: flex;
+      gap: 18px;
+      transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+      padding: 8px 4px;
+    }
+
+    .pd-card {
+      min-width: 220px;
+      max-width: 220px;
+      background: var(--letras-escuras);
+      border: 1px solid var(--cobalto);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .pd-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--laranja);
+      box-shadow: 0 8px 24px rgba(249,115,22,0.15);
+    }
+
+    .pd-card-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      background: var(--cobalto);
+    }
+
+    .pd-badge {
+      display: inline-block;
+      background: var(--laranja);
+      color: var(--letras-brancas);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .pd-card-title {
+      color: var(--letras-brancas);
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 0 6px 0;
+    }
+
+    .pd-card-price {
+      color: var(--verde-esmeralda);
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 14px 0;
+    }
+
+    .pd-card-btn {
+      background: transparent;
+      color: var(--laranja);
+      border: 1.5px solid var(--laranja);
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.25s;
+      text-transform: uppercase;
+    }
+
+    .pd-card-btn:hover {
+      background: var(--laranja);
+      color: var(--letras-brancas);
+    }
+
+    .pd-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(249,115,22,0.1);
+      border: 1px solid var(--laranja);
+      color: var(--laranja);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s;
+      z-index: 2;
+    }
+
+    .pd-arrow:hover {
+      background: var(--laranja-hover);
+      color: var(--letras-brancas);
+    }
+
+    .pd-arrow.prev { left: 0; }
+    .pd-arrow.next { right: 0; }
+
+    .pd-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .pd-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #3f4552;
+      cursor: pointer;
+      transition: all 0.3s;
+      border: none;
+      padding: 0;
+    }
+
+    .pd-dot.active {
+      background: var(--laranja);
+      transform: scale(1.2);
+    }
+
+    /* Responsivo */
+    @media (max-width: 1300px) {
+      .pd-card { min-width: 200px; max-width: 200px; }
+    }
+    @media (max-width: 1100px) {
+      .pd-card { min-width: 220px; max-width: 220px; }
+    }
+    @media (max-width: 900px) {
+      .pd-card { min-width: 240px; max-width: 240px; }
+    }
+    @media (max-width: 600px) {
+      .pd-card { min-width: 280px; max-width: 280px; }
+      .pd-arrow { display: none; }
+    }
