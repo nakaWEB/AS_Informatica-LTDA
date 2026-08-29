@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos comunicação visual</title>
+
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/GERAL/1-CSS/barra navegação.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/GERAL/1-CSS/1-estilo geral.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-COMUNICAÇÃO VISUAL/2-PROJETOS/rodape.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/1-CSS/barra navegação.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-COMUNICAÇÃO VISUAL/2-PROJETOS/1-parte.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-COMUNICAÇÃO VISUAL/2-PROJETOS/conteiner de img.css">
+  <!--bibliotecas-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!--FONTES-->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+  <base target="_blank">
+</head>
+
+<body>
+  <!--NAVEGAÇÃO-->
+  <nav class="main-nav">
+    <div class="main-nav-inner">
+      <img class="logo-pagina" src="./IMGs/LOGO COMUNICAÇÂO VISUAL.png" alt="">
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./3-sobre a loja.html">Quem Somos</a></li>
+        <li><a href="./2-serviços feitos.html">Serviços</a></li>
+        <li><a href="./2-setores.html">Produtos</a></li>
+        <li><a href="#footer">Contato</a></li>
+        <li><a href="https://wa.me/5528999232788?text=Olá!%20Gostaria%20de%20um%20orçamento." class="cta-btn"><i
+              class="fab fa-whatsapp" style="color: #000000;"></i> Solicitar Orçamento</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--INICIO-->
+  <div class="inc">
+    <img class="fundo-inc" src="./IMGs/SETORES/COMUNICAÇÃO VISUAL/INICIO/fundo-inc.png">
+
+    <div class="frase-inc-txt">
+      <h1 class="inc-1">
+        NOSSOS PROJETOS
+      </h1>
+      <h2 class="inc-2">
+        Projetos que</br>
+        geram resultados.</br>
+      </h2>
+      <h3 class="inc-3">
+        Cada detalhe, uma marca</br>
+        que se destaca.
+      </h3>
+    </div>
+
+    <h3 class="descrição">
+      Conheça alguns dos trabalhos que desenvolvemos <br>
+      e veja camo ajudamos nossos clientes a se <br>
+      destacarem no mercado.
+    </h3>
+  </div>
+
+  <div class="pt-central">
+    <!--conteiner de imagens-->
+    <div class="gallery-container">
+      <!-- Filtros -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="fachada">Fachadas</button>
+        <button class="filter-btn" data-filter="envelopamento">Plotagem</button>
+        <button class="filter-btn" data-filter="toldo">Toldo</button>
+        <button class="filter-btn" data-filter="totem">Totens</button>
+        <button class="filter-btn" data-filter="placa">Placas</button>
+        <button class="filter-btn" data-filter="letra">Letras e Letreiros</button>
+      </div>
+
+      <!-- Grid de Imagens -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Card 1 -->
+        <a href="#" class="gallery-card" data-category="fachada">
+          <img src="./IMGs/PROJETOS.SERVIÇOS/OTICA MUNDIAL IBATIBA.png" alt="Acqua Fitness">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Fachada e placa</div>
+            <h3 class="gallery-card-title">Otica Mundial - Ibatiba-ES</h3>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#" class="gallery-card" data-category="fachada">
+          <img src="./IMGs/PROJETOS.SERVIÇOS/AMORA GUAÇUI.png" alt="Verde Jardins">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Fachada</div>
+            <h3 class="gallery-card-title">Amora - Guagui-ES</h3>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#" class="gallery-card" data-category="letra">
+          <img src="./IMGs/PROJETOS.SERVIÇOS/JOICE RIO NOVO.png" alt="Escritório Inovare">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Letreiro com LED</div>
+            <h3 class="gallery-card-title">JH Beauty - Rio Novo do Sul-ES</h3>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="#" class="gallery-card" data-category="placa">
+          <img src="./IMGs/PROJETOS.SERVIÇOS/LA GUARDIA.jpg" alt="Seven Lounge">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Placa ACM</div>
+            <h3 class="gallery-card-title">La Guardia - Alegre-ES</h3>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="#" class="gallery-card" data-category="fachada">
+          <img src="./IMGs/PROJETOS.SERVIÇOS/AMORA ALEGRE.jpeg" alt="D'Oro Joias">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Fachada ACM com Placa</div>
+            <h3 class="gallery-card-title">Amora - Castelo-ES</h3>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="#" class="gallery-card" data-category="fachada">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=450&fit=crop" alt="Bella Modas">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Fachadas</div>
+            <h3 class="gallery-card-title">Bella Modas</h3>
+          </div>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="#" class="gallery-card" data-category="envelopamento">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=450&fit=crop"
+            alt="Express Log">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Envelopamento</div>
+            <h3 class="gallery-card-title">Express Log</h3>
+          </div>
+        </a>
+
+        <!-- Card 8 -->
+        <a href="#" class="gallery-card" data-category="impressao">
+          <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&h=450&fit=crop"
+            alt="Painel Decorativo">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Impressão Digital</div>
+            <h3 class="gallery-card-title">Painel Decorativo</h3>
+          </div>
+        </a>
+
+        <!-- Card 9 -->
+        <a href="#" class="gallery-card" data-category="letra">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=450&fit=crop"
+            alt="Caffè Italiano">
+          <div class="gallery-card-overlay">
+            <div class="gallery-card-tag">Letras Caixa</div>
+            <h3 class="gallery-card-title">Caffè Italiano</h3>
+          </div>
+        </a>
+      </div>
+
+      <!-- Botão Carregar Mais -->
+      <div class="gallery-load-more">
+        <button class="load-more-btn" id="loadMoreBtn">Carregando + 40 de 120</button>
+      </div>
+    </div>
+
+
+
+  <!--RODA PE-->
+  <footer class="footer" id="footer">
+    <div class="frase-do-balacubaco">
+
+      <img src="./IMGs/RODA PE/FRASE DO BALACU BACO.png" alt="">
+
+      <h1 class="divog">Fale com a nossa equipe e descubra</br>
+        a melhor solução em comunicação </br>
+        visual para o seu negócio
+      </h1>
+
+      <a href="https://wa.me/5528999232788?text=Olá!%20Gostaria%20de%20um%20orçamento." class="fcn-btn"><i
+          class="fab fa-whatsapp" style="color: #000000;"></i><strong> FALE CONOSCO</strong></a>
+    </div>
+
+    <img class="logo-footer" src="./IMGs/LOGO COMUNICAÇÂO VISUAL.png" alt="">
+    <p class="texto-footer">
+      Transformamos ideias em soluções</br>
+      visuais que comunicão, conectam</br>
+      e fortalecem marcas.
+    </p>
+
+    <nav class="main-footer">
+      <div class="main-footer-inner">
+        <ul class="footer-links">
+          <h1>SERVIÇOS</h1>
+          <li><a href="#">
+              <p>Placas</p>
+            </a></li>
+          <li><a href="#">
+              <p>Fachadas</p>
+            </a></li>
+          <li><a href="#">
+              <p>Letreiros</p>
+            </a></li>
+          <li><a href="#">
+              <p>Plotagem</p>
+            </a></li>
+          <li><a href="#">
+              <p>Toldos</p>
+            </a></li>
+          <li><a href="#">
+              <p>Setores</p>
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="main-footer">
+      <div class="main-footer-ct-inner">
+        <ul class="footer-links">
+          <h1>CONTATO</h1>
+          <li><a href="https://wa.me/5528999232788?text=Olá!%20Gostaria%20de%20um%20orçamento.">
+              <p><i class="fab fa-whatsapp"></i> (28) 99923 - 2788</p>
+            </a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=asinformatica2015@gmail.com">
+              <p><i class="fa-solid fa-envelope"></i> asinformatica2015@gmail.com</p>
+            </a></li>
+          <li><a
+              href="https://www.google.com/maps/place/As+Inform%C3%A1tica/@-20.462648,-41.4161125,17z/data=!4m6!3m5!1s0xbbd2ee4f035f2b:0x9e2e25064c777d03!8m2!3d-20.4624771!4d-41.4142135!16s%2Fg%2F11fmpfjhr2?entry=ttu&g_ep=EgoyMDI2MDcwNy4wIKXMDSoASAFQAw%3D%3D">
+              <p><i class="fa-solid fa-location-dot"></i> R. Américo Mignone - Centro, </br> Muniz Freire - ES,
+                29380-000 </p>
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="main-footer">
+      <div class="main-footer-rc-inner">
+        <ul class="footer-links">
+          <h1>REDES SOCIAIS</h1>
+          <div>
+            <li><a href="">
+                <p><i class="fa-brands fa-instagram"></i></p>
+              </a></li>
+            <li><a href="">
+                <p><i class="fa-brands fa-facebook-f"></i></p>
+              </a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="altoria">
+      <p>&copy; 2026 AS Informatica. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  </div>
+  <script src="./1-ESTILO/SETORES/2-JS/nav.js"></script>
+
+  <script>
+    // Filtro de categorias
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Atualiza botão ativo
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        galleryCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Animação inicial
+    galleryCards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      setTimeout(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, index * 100);
+    });
+  </script>
+</body>
+
+</html>

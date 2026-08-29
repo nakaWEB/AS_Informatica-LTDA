@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impreção 3D</title>
+
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/GERAL/1-CSS/barra navegação.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/GERAL/1-CSS/1-estilo geral.css">
+
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-IMPREÇÃO 3D/1-INICIO/CSS/2-meio-amostras.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-IMPREÇÃO 3D/1-INICIO/CSS/1-parte.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-IMPREÇÃO 3D/1-INICIO/CSS/2-meio-categorias.css">
+  <link rel="stylesheet" href="./1-ESTILO/SETORES/2-IMPREÇÃO 3D/1-INICIO/CSS/rodape.css">
+  <!--bibliotecas-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!--FONTES-->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--NAVEGAÇÃO-->
+  <nav class="main-nav">
+    <div class="main-nav-inner">
+      <img class="logo-pagina" src="./IMGs/LOGO COMUNICAÇÂO VISUAL.png" alt="">
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./3-sobre a loja.html">Quem Somos</a></li>
+        <li><a href="./2-serviços feitos.html">Serviços</a></li>
+        <li><a href="./2-setores.html">Produtos</a></li>
+        <li><a href="#footer">Contato</a></li>
+        <li><a href="https://wa.me/5528999232788?text=Olá!%20Gostaria%20de%20um%20orçamento." class="cta-btn"><i
+              class="fab fa-whatsapp" style="color: #000000;"></i> Solicitar Orçamento</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--INICIO-->
+  <div class="inc">
+    <img class="fundo-inc" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/fundo inc.png">
+    <div class="frase-inc-txt">
+      <h2 class="inc-2">
+        Comunicação</br>
+        Visual</br>
+      </h2>
+      <h3 class="inc-3">
+        que comunica,</br>
+        conecta e destaca.
+      </h3>
+    </div>
+    <h3 class="descrição">
+      Impressão3D com qualidade, </br>
+      precisão e acabamento incríveis.
+    </h3>
+
+    <!--BOTÕES-->
+    <a href="./2-setores.html" class="ns-inc-btn">
+      <i class="fa-solid fa-arrow-right"></i><strong> NOSSOS SERVIÇOS</strong>
+    </a>
+
+    <a href="#" class="vnp-inc-btn">
+      <i class="fa-solid fa-cube"></i><strong> VEJA NOSSOS PROJETOS</strong>
+    </a>
+  </div>
+
+  <!--MEIO CATEGORIAS-->
+  <div class="meio-1">
+    <div class="categorias-wrapper">
+      <h2 class="categorias-titulo">Categorias</h2>
+      <div class="categorias-grid">
+
+        <div class="categoria-card">
+          <img class="categoria-img" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/MEIO/DECORAÇÃO 3d.jpg" alt="">
+          <div class="categoria-info">
+            <span class="categoria-nome">Título</span>
+            <span class="categoria-linha"></span>
+          </div>
+        </div>
+
+        <div class="categoria-card">
+          <img class="categoria-img" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/MEIO/DECORAÇÃO 3d.jpg" alt="">
+          <div class="categoria-info">
+            <span class="categoria-nome">Título</span>
+            <span class="categoria-linha"></span>
+          </div>
+        </div>
+
+        <div class="categoria-card">
+          <img class="categoria-img" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/MEIO/DECORAÇÃO 3d.jpg" alt="">
+          <div class="categoria-info">
+            <span class="categoria-nome">Título</span>
+            <span class="categoria-linha"></span>
+          </div>
+        </div>
+
+        <div class="categoria-card">
+          <img class="categoria-img" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/MEIO/DECORAÇÃO 3d.jpg" alt="">
+          <div class="categoria-info">
+            <span class="categoria-nome">Título</span>
+            <span class="categoria-linha"></span>
+          </div>
+        </div>
+
+        <div class="categoria-card">
+          <img class="categoria-img" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/MEIO/DECORAÇÃO 3d.jpg" alt="">
+          <div class="categoria-info">
+            <span class="categoria-nome">Título</span>
+            <span class="categoria-linha"></span>
+          </div>
+        </div>
+
+        <div class="categoria-card">
+          <img class="categoria-img" src="./IMGs/SETORES/IMPREÇÃO 3D/INICIO/MEIO/DECORAÇÃO 3d.jpg" alt="">
+          <div class="categoria-info">
+            <span class="categoria-nome">Título</span>
+            <span class="categoria-linha"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="meio-2">
+    <div class="pd-container">
+      <div class="pd-header">
+        <h2>PRODUTOS EM <span>DESTAQUE</span></h2>
+      </div>
+
+      <div class="pd-carousel-wrapper">
+        <button class="pd-arrow prev" onclick="moveCarousel(-1)">‹</button>
+        <div class="pd-carousel" id="pdCarousel"></div>
+        <button class="pd-arrow next" onclick="moveCarousel(1)">›</button>
+      </div>
+
+      <div class="pd-nav" id="pdDots"></div>
+    </div>
+  </div>
+  <!--RODA PE-->
+  <footer class="footer" id="footer">
+    <div class="frase-do-balacubaco">
+
+      <img src="./IMGs/RODA PE/FRASE DO BALACU BACO.png" alt="">
+
+      <h1 class="divog">Fale com a nossa equipe e descubra</br>
+        a melhor solução em comunicação </br>
+        visual para o seu negócio
+      </h1>
+
+      <a href="https://wa.me/5528999232788?text=Olá!%20Gostaria%20de%20um%20orçamento." class="fcn-btn"><i
+          class="fab fa-whatsapp" style="color: #000000;"></i><strong> FALE CONOSCO</strong></a>
+    </div>
+
+    <img class="logo-footer" src="./IMGs/LOGO COMUNICAÇÂO VISUAL.png" alt="">
+    <p class="texto-footer">
+      Transformamos ideias em soluções</br>
+      visuais que comunicão, conectam</br>
+      e fortalecem marcas.
+    </p>
+
+    <nav class="main-footer">
+      <div class="main-footer-inner">
+        <ul class="footer-links">
+          <h1>SERVIÇOS</h1>
+          <li><a href="#">
+              <p>Placas</p>
+            </a></li>
+          <li><a href="#">
+              <p>Fachadas</p>
+            </a></li>
+          <li><a href="#">
+              <p>Letreiros</p>
+            </a></li>
+          <li><a href="#">
+              <p>Plotagem</p>
+            </a></li>
+          <li><a href="#">
+              <p>Toldos</p>
+            </a></li>
+          <li><a href="#">
+              <p>Setores</p>
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="main-footer">
+      <div class="main-footer-ct-inner">
+        <ul class="footer-links">
+          <h1>CONTATO</h1>
+          <li><a href="https://wa.me/5528999232788?text=Olá!%20Gostaria%20de%20um%20orçamento.">
+              <p><i class="fab fa-whatsapp"></i> (28) 99923 - 2788</p>
+            </a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=asinformatica2015@gmail.com">
+              <p><i class="fa-solid fa-envelope"></i> asinformatica2015@gmail.com</p>
+            </a></li>
+          <li><a
+              href="https://www.google.com/maps/place/As+Inform%C3%A1tica/@-20.462648,-41.4161125,17z/data=!4m6!3m5!1s0xbbd2ee4f035f2b:0x9e2e25064c777d03!8m2!3d-20.4624771!4d-41.4142135!16s%2Fg%2F11fmpfjhr2?entry=ttu&g_ep=EgoyMDI2MDcwNy4wIKXMDSoASAFQAw%3D%3D">
+              <p><i class="fa-solid fa-location-dot"></i> R. Américo Mignone - Centro, </br> Muniz Freire - ES,
+                29380-000 </p>
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="main-footer">
+      <div class="main-footer-rc-inner">
+        <ul class="footer-links">
+          <h1>REDES SOCIAIS</h1>
+          <div>
+            <li><a href="">
+                <p><i class="fa-brands fa-instagram"></i></p>
+              </a></li>
+            <li><a href="">
+                <p><i class="fa-brands fa-facebook-f"></i></p>
+              </a></li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="altoria">
+      <p>&copy; 2026 AS Informatica. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./1-ESTILO/SETORES/2-JS/nav.js"></script>
+  <script src="./1-ESTILO/SETORES/2-IMPREÇÃO 3D/1-INICIO/js/amostras.js "></script>
+</body>
+
+</html>
