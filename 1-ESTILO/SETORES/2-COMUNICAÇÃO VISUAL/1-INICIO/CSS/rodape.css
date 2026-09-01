@@ -1,79 +1,68 @@
-  .footer {
+.footer {
     position: absolute;
     top: 210.4%;
     left: 0;
-
     background: var(--fundo-rodape);
-
     width: 100%;
     height: 66.6%;
-  }
+}
 
-  .footer .frase-do-balacubaco {
+.footer .frase-do-balacubaco {
     width: 100%;
     height: 32%;
-
     border-bottom: 1px solid #ffc400;
     border-top: 1px solid #ffc400;
-
     position: absolute;
     left: 0;
     top: 0;
-
     border-bottom-right-radius: solid 2px red;
-  }
+}
 
-  .footer .frase-do-balacubaco img {
+.footer .frase-do-balacubaco img {
     width: 50%;
     position: absolute;
     left: 0;
     top: 0;
-  }
+}
 
-  .footer .frase-do-balacubaco .divog {
+.footer .frase-do-balacubaco .divog {
     margin-left: 50%;
     margin-top: 4%;
-
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-  }
+}
 
-  .footer .frase-do-balacubaco .fcn-btn {
+.footer .frase-do-balacubaco .fcn-btn {
     text-decoration: none;
     background: var(--laranja);
     color: var(--letras-escuras) !important;
-
     padding: 10px 22px !important;
     border-radius: 25px !important;
-
     transition: all 0.3s ease !important;
-
     position: absolute;
     top: 28%;
     left: 74%;
     align-items: center;
     text-align: center;
-
     font-size: 13px !important;
     font-family: Arial, Helvetica, sans-serif;
-
     cursor: pointer;
-  }
+}
 
-  .footer .frase-do-balacubaco .fcn-btn:hover {
+.footer .frase-do-balacubaco .fcn-btn:hover {
     background: var(--laranja-hover);
-  }
+}
 
-  /*meio rodape*/
-  .logo-footer {
+/*meio rodape*/
+.logo-footer {
     position: absolute;
     top: 34.2%;
     left: 0;
     width: 25.5%;
-  }
+}
 
-  .texto-footer {
+.texto-footer {
     position: absolute;
     top: 59.5%;
     left: 2%;
@@ -82,80 +71,219 @@
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 1px;
-  }
+}
 
-  .main-footer-inner {
+.main-footer-inner {
     position: absolute;
     top: 207.04%;
     left: 0;
     margin-top: -67%;
     margin-left: 27%;
-  }
+}
 
-  .main-footer-ct-inner {
+.main-footer-ct-inner {
     position: absolute;
     top: 207.04%;
     left: 0;
     margin-top: -67%;
     margin-left: 40%;
-  }
+}
 
-  .main-footer-rc-inner {
+.main-footer-rc-inner {
     position: absolute;
     top: 207.04%;
     left: 0;
     margin-top: -67%;
     margin-left: 70%;
-  }
+}
 
-  .main-footer-rc-inner .footer-links div {
+.main-footer-rc-inner .footer-links div {
     display: flex;
     align-items: center;
     gap: 20px;
-  }
+}
 
-  .main-footer-rc-inner .footer-links div li a p i {
+.main-footer-rc-inner .footer-links div li a p i {
     font-size: 20px;
-  }
+}
 
-  .footer-links h1 {
+.footer-links h1 {
     color: var(--laranja);
-
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-  .footer-links p {
+.footer-links p {
     text-decoration: none;
-
     color: white;
     margin: 8px 0px;
     letter-spacing: 1px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
-  .footer-links a {
+.footer-links a {
     text-decoration: none;
-  }
+}
 
-  .footer .altoria {
+.footer .altoria {
     position: absolute;
     top: 93%;
     left: 0%;
-
-
     width: 100%;
     height: 7%;
-
     text-align: center;
-  }
+}
 
-  .footer .altoria p {
+.footer .altoria p {
     margin-top: -1%;
     color: white;
     background: var(--fundo-rodape);
-
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .footer {
+        height: auto;
+        min-height: 500px;
+    }
+    .footer .frase-do-balacubaco {
+        height: 25%;
+    }
+    .footer .frase-do-balacubaco img {
+        width: 40%;
+    }
+    .footer .frase-do-balacubaco .divog {
+        margin-left: 42%;
+        font-size: 12px;
+    }
+    .footer .frase-do-balacubaco .fcn-btn {
+        left: 68%;
+        font-size: 12px !important;
+        padding: 8px 16px !important;
+    }
+    .logo-footer {
+        width: 20%;
+        top: 30%;
+    }
+    .texto-footer {
+        top: 52%;
+        font-size: 10px;
+    }
+    .main-footer-inner {
+        margin-left: 24%;
+    }
+    .main-footer-ct-inner {
+        margin-left: 45%;
+    }
+    .main-footer-rc-inner {
+        margin-left: 72%;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        padding: 30px 20px 60px;
+    }
+    .footer .frase-do-balacubaco {
+        position: relative;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer .frase-do-balacubaco img {
+        position: relative;
+        width: 80%;
+        max-width: 300px;
+        left: auto;
+        top: auto;
+        display: block;
+        margin: 0 auto 15px;
+    }
+    .footer .frase-do-balacubaco .divog {
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer .frase-do-balacubaco .fcn-btn {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 12px !important;
+        padding: 10px 20px !important;
+    }
+    .logo-footer {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 40%;
+        max-width: 180px;
+        display: block;
+        margin: 30px auto 15px;
+    }
+    .texto-footer {
+        position: relative;
+        top: auto;
+        left: auto;
+        text-align: center;
+        margin: 0 0 25px 0;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .main-footer,
+    .main-footer-inner,
+    .main-footer-ct-inner,
+    .main-footer-rc-inner {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        margin: 0 0 25px 0 !important;
+        text-align: center;
+    }
+    .main-footer-rc-inner .footer-links div {
+        justify-content: center;
+    }
+    .footer-links h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .footer-links p {
+        font-size: 14px;
+    }
+    .footer .altoria {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer .altoria p {
+        margin: 0;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 479px) {
+    .footer .frase-do-balacubaco .divog {
+        font-size: 12px;
+    }
+    .logo-footer {
+        width: 50%;
+    }
+    .footer-links h1 {
+        font-size: 14px;
+    }
+    .footer-links p {
+        font-size: 12px;
+    }
+}

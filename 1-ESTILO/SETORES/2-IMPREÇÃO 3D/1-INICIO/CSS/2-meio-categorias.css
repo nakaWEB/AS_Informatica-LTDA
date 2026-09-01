@@ -98,3 +98,67 @@
         font-size: 22px;
       }
     }
+
+/* ========== RESPONSIVO ADICIONAL ========== */
+
+@media (max-width: 1023px) {
+    .meio-1 {
+        top: 75%;
+    }
+    .categorias-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+    }
+    .categoria-nome {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .meio-1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+    }
+    .categorias-wrapper {
+        width: 92%;
+    }
+    .categorias-titulo {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    .categorias-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+    .categoria-card {
+        padding: 4px;
+    }
+    .categoria-img {
+        margin-bottom: 8px;
+    }
+    .categoria-nome {
+        font-size: 12px;
+    }
+    .categoria-linha {
+        width: 36px;
+        height: 2px;
+    }
+}
+
+@media (max-width: 479px) {
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .categorias-titulo {
+        font-size: 16px;
+    }
+    .categoria-nome {
+        font-size: 11px;
+    }
+}

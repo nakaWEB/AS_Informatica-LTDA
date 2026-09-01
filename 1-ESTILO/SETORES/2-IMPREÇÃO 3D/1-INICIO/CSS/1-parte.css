@@ -145,3 +145,129 @@ body {
   .letra-laranja {
     color: var(--letra-laranja);
   }
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 28pt;
+        line-height: 28pt;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 32pt;
+        line-height: 32pt;
+        margin-top: -8%;
+    }
+    .inc .descrição {
+        font-size: 13px;
+        line-height: 20px;
+        top: 60%;
+    }
+    .inc .ns-inc-btn,
+    .inc .vp-inc-btn,
+    .inc .vnp-inc-btn {
+        font-size: 10px !important;
+        padding: 8px 10px !important;
+    }
+    .inc .vnp-inc-btn {
+        margin-left: 30%;
+    }
+    .inc .vp-inc-btn {
+        margin-left: 6%;
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .inc {
+        position: relative;
+        height: auto;
+        min-height: 380px;
+        padding-bottom: 40px;
+    }
+    .inc .fundo-inc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .inc .frase-inc-txt {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 50px 20px 0;
+    }
+    .inc .frase-inc-txt .inc-1 {
+        font-size: 11pt;
+    }
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 24pt;
+        line-height: 24pt;
+        margin-top: 5px;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 28pt;
+        line-height: 28pt;
+        margin-top: 5px;
+    }
+    .inc .descrição {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px 20px 0;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .inc .ns-inc-btn,
+    .inc .vp-inc-btn,
+    .inc .vnp-inc-btn {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: inline-block;
+        margin: 20px 8px 0 20px;
+        font-size: 11px !important;
+        padding: 10px 14px !important;
+    }
+    .inc .vp-inc-btn {
+        margin-left: 8px;
+        font-size: 13px !important;
+    }
+    .inc .vnp-inc-btn {
+        margin-left: 8px;
+    }
+}
+
+@media (max-width: 479px) {
+    .inc {
+        min-height: 340px;
+    }
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 20pt;
+        line-height: 22pt;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 24pt;
+        line-height: 24pt;
+    }
+    .inc .descrição {
+        font-size: 12px;
+    }
+    .inc .ns-inc-btn,
+    .inc .vp-inc-btn,
+    .inc .vnp-inc-btn {
+        display: block;
+        width: fit-content;
+        margin: 12px auto 0;
+        text-align: center;
+    }
+    .inc .vp-inc-btn {
+        margin: 10px auto 0;
+    }
+    .inc .vnp-inc-btn {
+        margin: 10px auto 0;
+    }
+}

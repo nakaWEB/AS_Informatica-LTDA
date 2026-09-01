@@ -1,106 +1,194 @@
-  body {
-      background: var(--fundo-rodape);
-  }
+body {
+    background: var(--fundo-rodape);
+}
 
-  .inc {
-      position: absolute;
-      top: 0px;
-      left: 0px;
+.inc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 41.4%;
+    background: var(--fundo-rodape);
+}
 
-      width: 100%;
-      height: 41.4%;
+.fundo-inc {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    transform: translateX(-100%);
+    height: 100%;
+}
 
-      background: var(--fundo-rodape);
-  }
+.filtro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--fundo-rodape) 0%, var(--fundo-rodape) 37.9%, rgba(255, 0, 0, 0) 45%);
+}
 
-  .fundo-inc {
-      position: absolute;
-      top: 0px;
-      left: 100%;
-      transform: translateX(-100%);
-      height: 100%;
-  }
+.inc .frase-inc-txt {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
 
-  .filtro {
-      position: absolute;
-      top: 0;
-      left: 0;
+.inc .frase-inc-txt .inc-2 {
+    margin-top: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    font-size: 48px;
+    line-height: 48px;
+}
 
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, var(--fundo-rodape) 0%, var(--fundo-rodape) 37.9%, rgba(255, 0, 0, 0) 45%);
-  }
+.inc .frase-inc-txt .inc-3 {
+    font-family: "allura", cursive;
+    color: var(--laranja);
+    font-size: 50px;
+    margin-top: -9%;
+    line-height: 48px;
+}
 
-  .inc .frase-inc-txt {
-      position: absolute;
-      top: 25%;
-      left: 5%;
-  }
+.inc .descrição {
+    position: absolute;
+    top: 68.2%;
+    left: 0;
+    margin-left: 6%;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+}
 
-  .inc .frase-inc-txt .inc-2 {
-      margin-top: 6%;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--branco);
-      font-size: 36pt;
-      line-height: 35pt;
-  }
+.linha-final {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--letra-laranja);
+    align-items: center;
+    display: flex;
+}
 
-  .inc .frase-inc-txt .inc-3 {
-      font-family: "allura", cursive;
-      color: var(--laranja);
-      font-size: 40pt;
-      margin-top: -9%;
-      line-height: 35pt;
-  }
+.linha-final h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--letras-brancas);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 
-  .inc .descrição {
-      position: absolute;
-      top: 68.2%;
-      left: 0;
-      margin-left: 6%;
-      color: white;
-      font-size: 14px;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 22px;
-  }
+.linha-final .tracado-negro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 2px;
+    background: var(--fundo-rodape);
+}
 
-  .linha-final {
-      position: absolute;
-      top: 100%;
-      left: 0;
+.linha-final h1 .letra-laranja {
+    color: var(--letra-laranja);
+}
 
-      width: 100%;
-      height: 1px;
-      background: var(--letra-laranja);
+/* ========== RESPONSIVO ========== */
 
-      align-items: center;
-      display: flex;
+/* Tablets e telas menores (até 1024px) */
+@media (max-width: 1024px) {
+    .inc {
+        height: 35%;
+    }
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .inc .descrição {
+        font-size: 12px;
+        line-height: 18px;
+        top: 72%;
+    }
+    .linha-final h1 {
+        font-size: 20px;
+    }
+}
 
-  }
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    .inc {
+        position: relative;
+        height: auto;
+        min-height: 280px;
+        padding-bottom: 40px;
+    }
+    .fundo-inc {
+        width: 100%;
+        object-fit: cover;
+        left: 0;
+        transform: none;
+    }
+    .filtro {
+        background: linear-gradient(180deg, var(--fundo-rodape) 0%, rgba(0,0,0,0.6) 100%);
+    }
+    .inc .frase-inc-txt {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 60px 20px 0 20px;
+    }
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 0;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-top: 4px;
+    }
+    .inc .descrição {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px 20px 0 20px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .linha-final {
+        position: relative;
+        top: auto;
+        margin-top: 30px;
+    }
+    .linha-final h1 {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .linha-final .tracado-negro {
+        width: 15%;
+    }
+}
 
-  .linha-final h1 {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-
-      color: var(--letras-brancas);
-
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
-  }
-
-  .linha-final .tracado-negro {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      width: 30%;
-      height: 2px;
-
-      background: var(--fundo-rodape);
-  }
-
-  .linha-final h1 .letra-laranja {
-      color: var(--letra-laranja);
-  }
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .inc .descrição {
+        font-size: 12px;
+    }
+    .linha-final h1 {
+        font-size: 16px;
+    }
+}

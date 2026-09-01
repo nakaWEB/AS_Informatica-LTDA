@@ -1,54 +1,87 @@
-  body {
-      background: var(--fundo-rodape);
-  }
-  .inc {
-      position: absolute;
-      top: 0px;
-      left: 0px;
+body {
+    background: var(--fundo-rodape);
+}
 
-      width: 100%;
-      height: 20%;
+.inc {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20%;
+    background: var(--fundo-rodape);
+}
 
-      background: var(--fundo-rodape);
-  }
+.linha-final {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--letra-laranja);
+    align-items: center;
+    display: flex;
+}
 
-    .linha-final {
-      position: absolute;
-      top: 100%;
-      left: 0;
+.linha-final h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--letras-brancas);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
 
-      width: 100%;
-      height: 1px;
-      background: var(--letra-laranja);
+.linha-final .tracado-negro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 2px;
+    background: var(--fundo-rodape);
+}
 
-      align-items: center;
-      display: flex;
-
-  }
-
-  .linha-final h1 {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-
-      color: var(--letras-brancas);
-
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
-  }
-
-  .linha-final .tracado-negro {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      width: 30%;
-      height: 2px;
-
-      background: var(--fundo-rodape);
-  }
-
-  .linha-final h1 .letra-laranja {
+.linha-final h1 .letra-laranja {
     color: var(--letra-laranja);
-  }
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .linha-final h1 {
+        font-size: 22px;
+    }
+    .linha-final .tracado-negro {
+        width: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+    .inc {
+        position: relative;
+        height: auto;
+        min-height: 60px;
+        padding: 20px 0;
+    }
+    .linha-final {
+        position: relative;
+        top: auto;
+        margin-top: 10px;
+    }
+    .linha-final h1 {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .linha-final .tracado-negro {
+        width: 15%;
+    }
+}
+
+@media (max-width: 479px) {
+    .linha-final h1 {
+        font-size: 16px;
+    }
+    .linha-final .tracado-negro {
+        width: 10%;
+    }
+}

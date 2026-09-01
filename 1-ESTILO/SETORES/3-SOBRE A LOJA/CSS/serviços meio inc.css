@@ -1,4 +1,4 @@
-  .DADOS-PG-SOBRE {
+.DADOS-PG-SOBRE {
     position: absolute;
     top: 102.5%;
     left: 0;
@@ -10,9 +10,10 @@
     gap: 0;
     background: var(--fundo-rodape);
     border-bottom: 2px solid #ffc400;
-    border-top: 2px solid #ffc400;  }
+    border-top: 2px solid #ffc400;
+}
 
-  .carde-dados {
+.carde-dados {
     margin-top: 2%;
     flex: 1 1 180px;
     max-width: 19.6% !important;
@@ -20,35 +21,102 @@
     position: relative;
     overflow: hidden;
     border: solid 1px rgba(0, 4, 255, 0);
-  }
+}
 
-  .carde-dados h1 {
+.carde-dados h1 {
     font-size: 20px;
     color: var(--laranja);
     margin: 0 0 12px 0;
-  }
+}
 
-  .carde-dados h2 {
+.carde-dados h2 {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--letras-brancas);
     margin: 0 0 12px 0;
-  }
-    .carde-dados h3 {
+}
+
+.carde-dados h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--laranja);
     margin: 0 0 12px 0;
-  }
+}
 
-  .servico-linha {
+.servico-linha {
     width: 30px;
     height: 3px;
     background: var(--laranja);
     margin: 0 auto;
     border-radius: 2px;
-  }
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .DADOS-PG-SOBRE {
+        height: auto;
+        min-height: 180px;
+        padding: 20px 0;
+    }
+    .carde-dados {
+        flex: 1 1 45%;
+        max-width: 48% !important;
+        margin-top: 1%;
+    }
+    .carde-dados h1 {
+        font-size: 18px;
+    }
+    .carde-dados h2 {
+        font-size: 13px;
+    }
+    .carde-dados h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .DADOS-PG-SOBRE {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        padding: 30px 15px;
+    }
+    .carde-dados {
+        flex: 1 1 45%;
+        max-width: 48% !important;
+        margin-top: 10px;
+    }
+    .carde-dados h1 {
+        font-size: 16px;
+    }
+    .carde-dados h2 {
+        font-size: 12px;
+    }
+    .carde-dados h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .carde-dados {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+        margin-top: 15px;
+    }
+    .carde-dados h1 {
+        font-size: 18px;
+    }
+    .carde-dados h2 {
+        font-size: 13px;
+    }
+    .carde-dados h3 {
+        font-size: 18px;
+    }
+}

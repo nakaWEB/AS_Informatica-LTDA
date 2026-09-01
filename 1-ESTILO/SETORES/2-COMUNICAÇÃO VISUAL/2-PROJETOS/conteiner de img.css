@@ -139,7 +139,7 @@
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-    .gallery-filters {
+    .gallery-filters { 
         gap: 6px;
     }
     .filter-btn {

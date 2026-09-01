@@ -1,4 +1,4 @@
-  :root {
+:root {
     --laranja: rgb(252, 201, 34);
     --laranja-hover: rgb(255, 217, 92);
     --barra-nav: linear-gradient(0, #ffffff00 0%, rgb(0, 0, 0) 100%);
@@ -22,17 +22,25 @@
     --verde-esmeralda: #4ade80;
 
     --borda-setores: 7px;
-  }
+}
 
-  body {
+body {
     background: var(--fundo);
-  }
+}
 
-  html {
+html {
     scrollbar-width: none;
     -ms-overflow-style: none;
-  }
+}
 
-  html::-webkit-scrollbar {
+html::-webkit-scrollbar {
     display: none;
-  }
+}
+
+/* ========== RESPONSIVO GLOBAL ========== */
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+}

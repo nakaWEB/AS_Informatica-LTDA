@@ -1,4 +1,4 @@
-  .main-nav {
+.main-nav {
     background: var(--barra-nav);
     position: fixed;
     width: 100%;
@@ -6,41 +6,41 @@
     left: 0;
     top: 0;
     z-index: 1000;
-  }
+}
 
-  .main-nav-inner {
+.main-nav-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     height: 70px;
-  }
+}
 
-  /* Logo */
-  .logo-pagina {
+/* Logo */
+.logo-pagina {
     margin-left: -1%;
     width: 22%;
     display: flex;
     align-items: center;
     gap: 12px;
     text-decoration: none;
-  }
+}
 
-  /* Nav Links */
-  .nav-links {
+/* Nav Links */
+.nav-links {
     display: flex;
     list-style: none;
     gap: 8px;
     align-items: center;
     position: absolute;
     left: 20%;
-  }
+}
 
-  .nav-links li {
+.nav-links li {
     position: relative;
-  }
+}
 
-  .nav-links a {
+.nav-links a {
     text-decoration: none;
     color: var(--letras-barra-nav);
     font-size: 12px;
@@ -52,9 +52,9 @@
     transition: all 0.3s ease;
     position: relative;
     font-family: Arial, Helvetica, sans-serif !important;
-  }
+}
 
-  .nav-links a::after {
+.nav-links a::after {
     content: '';
     position: absolute;
     bottom: 2px;
@@ -64,28 +64,27 @@
     background: var(--laranja);
     transition: all 0.3s ease;
     transform: translateX(-50%);
-  }
+}
 
-  .nav-links a:hover {
+.nav-links a:hover {
     color: var(--laranja);
-  }
+}
 
-  .nav-links a:hover::after {
+.nav-links a:hover::after {
     width: 60%;
-  }
+}
 
-  .nav-links a.active {
+.nav-links a.active {
     color: var(--laranja);
-  }
+}
 
-  .nav-links a.active::after {
+.nav-links a.active::after {
     width: 60%;
-  }
+}
 
-  /* CTA Button */
-  .cta-btn {
+/* CTA Button */
+.cta-btn {
     font-size: 13px !important;
-
     background: var(--laranja);
     color: var(--letras-escuras) !important;
     padding: 10px 22px !important;
@@ -93,14 +92,152 @@
     transition: all 0.3s ease !important;
     align-items: center;
     text-align: center;
-
     cursor: pointer;
-  }
+}
 
-  .cta-btn::after {
+.cta-btn::after {
     display: none !important;
-  }
+}
 
-  .cta-btn:hover {
+.cta-btn:hover {
     background: var(--laranja-hover);
-  }
+}
+
+/* ========== MENU MOBILE (HAMBÚRGUER) ========== */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    gap: 5px;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--letras-brancas);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .main-nav-inner {
+        padding: 0 15px;
+    }
+    .logo-pagina {
+        width: 18%;
+    }
+    .nav-links {
+        left: 18%;
+        gap: 4px;
+    }
+    .nav-links a {
+        font-size: 11px;
+        padding: 6px 6px;
+    }
+    .cta-btn {
+        font-size: 11px !important;
+        padding: 8px 16px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-nav {
+        height: 60px;
+    }
+    .main-nav-inner {
+        height: 60px;
+        padding: 0 15px;
+    }
+    .logo-pagina {
+        width: 140px;
+        margin-left: 0;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        padding-top: 40px;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        z-index: 999;
+    }
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links a {
+        display: block;
+        font-size: 16px;
+        padding: 16px 20px;
+        width: 100%;
+    }
+    .nav-links a::after {
+        bottom: 10px;
+    }
+    .cta-btn {
+        margin-top: 10px;
+        font-size: 14px !important;
+        padding: 12px 28px !important;
+    }
+    .cta-btn::after {
+        display: none !important;
+    }
+}
+
+@media (max-width: 479px) {
+    .main-nav {
+        height: 55px;
+    }
+    .main-nav-inner {
+        height: 55px;
+    }
+    .nav-links {
+        top: 55px;
+        height: calc(100vh - 55px);
+    }
+    .logo-pagina {
+        width: 120px;
+    }
+    .nav-links a {
+        font-size: 15px;
+        padding: 14px 20px;
+    }
+}

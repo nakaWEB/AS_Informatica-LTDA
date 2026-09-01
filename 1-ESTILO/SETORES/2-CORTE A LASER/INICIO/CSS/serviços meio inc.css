@@ -1,4 +1,4 @@
-  .servicos-container {
+.servicos-container {
     position: absolute;
     top: 100%;
     left: 0;
@@ -10,17 +10,17 @@
     gap: 0;
     padding: 40px 0px;
     background: var(--fundo-serviços);
-  }
+}
 
-  .servico-card {
+.servico-card {
     flex: 1 1 180px;
     max-width: 19.6% !important;
     text-align: center;
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .servico-card:not(:last-child)::after {
+.servico-card:not(:last-child)::after {
     content: '';
     position: absolute;
     right: 0;
@@ -30,45 +30,45 @@
     width: 2px;
     background: var(--divisa-serviços);
     z-index: 3;
-  }
+}
 
-  .servico-frente {
+.servico-frente {
     padding: 30px 20px;
     transition: opacity 0.35s ease;
-  }
+}
 
-  .servico-card:hover .servico-frente {
+.servico-card:hover .servico-frente {
     opacity: 0;
-  }
+}
 
-  .servico-titulo {
+.servico-titulo {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
     color: var(--letras-escuras);
     margin: 0 0 12px 0;
-  }
+}
 
-  .servico-descricao {
+.servico-descricao {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 13px;
     line-height: 1.6;
     color: var(--letras-cinzas);
     margin: 0 0 16px 0;
     padding: 0 10px;
-  }
+}
 
-  .servico-linha {
+.servico-linha {
     width: 30px;
     height: 3px;
     background: var(--laranja);
     margin: 0 auto;
     border-radius: 2px;
-  }
+}
 
-  /* ===== VERSO COM IMAGEM ===== */
-  .servico-verso {
+/* ===== VERSO COM IMAGEM ===== */
+.servico-verso {
     position: absolute;
     top: 0;
     left: 50%;
@@ -83,33 +83,91 @@
     align-items: flex-end;
     justify-content: center;
     cursor: pointer;
-  }
+}
 
-  .servico-card:hover .servico-verso {
+.servico-card:hover .servico-verso {
     opacity: 1;
-  }
+}
 
-  .servico-verso-overlay {
+.servico-verso-overlay {
     width: 100%;
     padding: 20px 15px;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .servico-card {
-      flex: 1 1 100%;
-      max-width: 100%;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .servico-card:not(:last-child)::after {
-      display: none;
+        display: none;
     }
 
     .servico-card:last-child {
-      border-bottom: none;
+        border-bottom: none;
     }
-  }
+}
 
-  /*icons*/
-  .icon-servi {
+/*icons*/
+.icon-servi {
     width: 30% !important;
-  }
+}
+
+/* ========== RESPONSIVO ADICIONAL ========== */
+
+@media (max-width: 1023px) {
+    .servicos-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        padding: 30px 15px;
+    }
+    .servico-card {
+        flex: 1 1 45%;
+        max-width: 48% !important;
+        margin-bottom: 15px;
+    }
+    .servico-card:not(:last-child)::after {
+        display: none;
+    }
+    .servico-frente {
+        padding: 20px 15px;
+    }
+    .servico-titulo {
+        font-size: 13px;
+    }
+    .icon-servi {
+        width: 25% !important;
+    }
+}
+
+/* Reafirma 1 coluna em mobile */
+@media (max-width: 767px) {
+    .servico-card {
+        flex: 1 1 100%;
+        max-width: 100% !important;
+    }
+    .servico-frente {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 479px) {
+    .servico-card {
+        margin-bottom: 10px;
+    }
+    .servico-frente {
+        padding: 15px 10px;
+    }
+    .servico-titulo {
+        font-size: 12px;
+    }
+    .servico-descricao {
+        font-size: 12px;
+    }
+    .icon-servi {
+        width: 20% !important;
+    }
+}

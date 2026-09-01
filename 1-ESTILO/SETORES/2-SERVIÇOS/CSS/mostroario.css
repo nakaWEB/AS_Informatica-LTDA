@@ -1,50 +1,47 @@
-  
-  body {
+body {
     background: var(--fundo-rodape);
-  }
+}
 
-  .inc-servicos .marca {
+.inc-servicos .marca {
     position: absolute;
     top: 0;
     left: 0;
     width: 30%;
     height: 100%;
     background: var(--fundo-rodape);
-
     clip-path: polygon(
-        0% 0%,       /* topo esquerdo */
-        100% 0%,      /* topo direito - 30% */
-        70% 100%,    /* base direita - 20% */
-        0% 100%      /* base esquerda */
+        0% 0%,
+        100% 0%,
+        70% 100%,
+        0% 100%
     );
 }
 
 .marca .logo-marca {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  }
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+}
 
-  .inc-servicos {
+.inc-servicos {
     position: absolute;
     top: 10%;
     left: 0;
     width: 100%;
     height: 90%;
-  }
+}
 
-  .corte-transvercal {
+.corte-transvercal {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 40%;
     height: 100%;
     background: red;
-  }
+}
 
-  .marquee-container {
+.marquee-container {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -52,16 +49,16 @@
     overflow: hidden;
     background: var(--fundo-rodape);
     height: 90%;
-  }
+}
 
-  .marquee-row {
+.marquee-row {
     display: flex;
     gap: 12px;
     width: max-content;
     will-change: transform;
-  }
+}
 
-  .marquee-row img {
+.marquee-row img {
     height: 140px;
     width: 220px;
     object-fit: cover;
@@ -69,9 +66,93 @@
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-  }
+}
 
-  .marquee-row img:hover {
+.marquee-row img:hover {
     transform: scale(1.05);
     z-index: 2;
-  }
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .inc-servicos .marca {
+        width: 25%;
+    }
+    .marca .logo-marca {
+        width: 100%;
+        object-fit: contain;
+    }
+    .marquee-row img {
+        height: 120px;
+        width: 190px;
+    }
+    .marquee-container {
+        gap: 10px;
+        padding: 12px 0;
+    }
+    .marquee-row {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .inc-servicos {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        padding: 20px 0 40px;
+    }
+    .inc-servicos .marca {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        clip-path: none;
+        background: transparent;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .marca .logo-marca {
+        position: relative;
+        height: 60px;
+        width: auto;
+        left: auto;
+        top: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .marquee-container {
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+    }
+    .marquee-row img {
+        height: 100px;
+        width: 160px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 479px) {
+    .inc-servicos .marca {
+        height: 60px;
+    }
+    .marca .logo-marca {
+        height: 50px;
+    }
+    .marquee-row img {
+        height: 85px;
+        width: 135px;
+        border-radius: 6px;
+    }
+    .marquee-container {
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .marquee-row {
+        gap: 8px;
+    }
+}
