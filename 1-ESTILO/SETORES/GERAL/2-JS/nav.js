@@ -25,7 +25,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // Fechar menu ao redimensionar para desktop
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 768) {
         const mobileNav = document.querySelector('.nav-links');
         const toggle = document.querySelector('.menu-toggle');
         mobileNav.classList.remove('active');

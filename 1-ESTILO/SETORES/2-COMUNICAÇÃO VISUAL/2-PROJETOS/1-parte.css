@@ -16,35 +16,35 @@
     height: 100%;
 }
 
-  .inc .frase-inc-txt {
+.inc .frase-inc-txt {
     position: absolute;
     top: 21%;
     left: 5%;
-  }
+}
 
-  .inc .frase-inc-txt .inc-1 {
+.inc .frase-inc-txt .inc-1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: var(--laranja);
-  }
+}
 
-  .inc .frase-inc-txt .inc-2 {
+.inc .frase-inc-txt .inc-2 {
     margin-top: -0.5%;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--branco);
     font-size: 48px;
     line-height: 48px;
-  }
+}
 
-  .inc .frase-inc-txt .inc-3 {
+.inc .frase-inc-txt .inc-3 {
     font-family: "allura", cursive;
     color: var(--laranja);
     font-size: 50px;
     margin-top: -5%;
     line-height: 48px;
-  }
+}
 
-  .inc .descrição {
+.inc .descrição {
     position: absolute;
     top: 70.2%;
     left: 0;
@@ -53,7 +53,7 @@
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 22px;
-  }
+}
 
 .inc .ns-inc-btn {
     position: absolute;
@@ -61,9 +61,7 @@
     left: 0;
     margin-left: 6%;
     font-size: 11px !important;
-
     border: none;
-
     background: var(--laranja);
     color: var(--letras-escuras) !important;
     padding: 10px 12px !important;
@@ -71,7 +69,6 @@
     transition: all 0.3s ease !important;
     align-items: center;
     text-align: center;
-
     cursor: pointer;
 }
 
@@ -86,9 +83,7 @@
     left: 0;
     margin-left: 22%;
     font-size: 11px !important;
-
     border: 1px solid rgb(163, 163, 163);
-
     background: var(--fundo-rodape);
     color: var(--letras-brancas) !important;
     padding: 10px 12px !important;
@@ -96,11 +91,119 @@
     transition: all 0.3s ease !important;
     align-items: center;
     text-align: center;
-
     cursor: pointer;
 }
 
 .inc .vnp-inc-btn:hover {
     background: var(--fundo-rodape);
     scale: 1.05;
+}
+
+/* ========== RESPONSIVO ========== */
+
+@media (max-width: 1023px) {
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: -3%;
+    }
+    .inc .descrição {
+        font-size: 13px;
+        line-height: 20px;
+        top: 72%;
+    }
+    .inc .ns-inc-btn,
+    .inc .vnp-inc-btn {
+        font-size: 10px !important;
+        padding: 8px 10px !important;
+    }
+    .inc .vnp-inc-btn {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .inc {
+        position: relative;
+        height: auto;
+        min-height: 340px;
+        padding-bottom: 40px;
+    }
+    .inc .fundo-inc {
+        width: 100%;
+        object-fit: cover;
+        left: 0;
+        transform: none;
+    }
+    .inc .frase-inc-txt {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 50px 20px 0;
+    }
+    .inc .frase-inc-txt .inc-1 {
+        font-size: 14px;
+    }
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-top: 5px;
+    }
+    .inc .descrição {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px 20px 0;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .inc .ns-inc-btn,
+    .inc .vnp-inc-btn {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: inline-block;
+        margin: 20px 10px 0 20px;
+        font-size: 11px !important;
+        padding: 10px 14px !important;
+    }
+    .inc .vnp-inc-btn {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .inc {
+        min-height: 300px;
+    }
+    .inc .frase-inc-txt .inc-2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .inc .frase-inc-txt .inc-3 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .inc .descrição {
+        font-size: 12px;
+    }
+    .inc .ns-inc-btn,
+    .inc .vnp-inc-btn {
+        display: block;
+        width: fit-content;
+        margin: 15px auto 0;
+        text-align: center;
+    }
+    .inc .vnp-inc-btn {
+        margin: 10px auto 0;
+    }
 }
