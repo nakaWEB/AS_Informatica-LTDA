@@ -99,9 +99,6 @@
 }
 
 .descricao-setor {
-    position: absolute;
-    top: 30%;
-    left: 4%;
     margin: 0 0 16px 0;
     color: #ddd;
     font-size: 15px;
