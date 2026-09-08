@@ -128,10 +128,12 @@
 
 @media (max-width: 767px) {
     .inc {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: auto;
         min-height: 340px;
-        padding-bottom: 40px;
     }
     .inc .fundo-inc {
         width: 100%;

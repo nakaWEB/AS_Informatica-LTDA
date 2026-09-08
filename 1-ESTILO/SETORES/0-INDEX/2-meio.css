@@ -37,7 +37,6 @@
     border-radius: var(--borda-setores);
     text-decoration: none;
     color: inherit;
-    border-radius: var(--borda-setores);
 }
 
 /* ===== IMAGEM (fundo) ===== */
@@ -66,12 +65,10 @@
     width: 100%;
     height: 100%;
     border-radius: var(--borda-setores);
-    background: linear-gradient(
-        90deg,
-        rgba(0,0,0,0.85) 0%,
-        rgba(0,0,0,0.4) 50%,
-        rgba(0,0,0,0.1) 100%
-    );
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.1) 100%);
     z-index: 2;
 }
 
@@ -194,26 +191,32 @@
     .setores {
         top: 42%;
     }
+
     .nav-setores {
         width: 96%;
         height: auto;
     }
+
     .contein-setores {
         position: relative;
         height: auto;
         gap: 12px;
         justify-content: center;
     }
+
     .card-setores {
         width: 48%;
         height: 220px;
     }
+
     .nome-setor {
         font-size: 18px;
     }
+
     .descricao-setor {
         font-size: 13px;
     }
+
     .pos-setores {
         position: relative;
         top: auto;
@@ -226,6 +229,7 @@
         flex-direction: column;
         gap: 10px;
     }
+
     .BP-STETIC-1,
     .BP-STETIC-2 {
         position: relative;
@@ -237,10 +241,12 @@
         padding: 12px;
         box-sizing: border-box;
     }
+
     .BP-STETIC-1 h1 {
         font-size: 13px;
         margin: 0;
     }
+
     .BP-STETIC-2 h1 {
         position: relative;
         left: auto;
@@ -252,51 +258,96 @@
 /* Celulares (até 768px) — 1 coluna */
 @media (max-width: 767px) {
     .setores {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 45%;
+        left: 0;
         width: 100%;
-        height: auto;
+        height: 100%;
         margin-top: 20px;
     }
+
     .nav-setores {
-        position: relative;
+        position: absolute;
         top: auto;
-        left: auto;
-        transform: none;
-        width: 92%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin-top: auto;
     }
+
     .contein-setores {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
-        gap: 16px;
     }
+
     .card-setores {
-        width: 100%;
+        width: 85%;
         height: 180px;
     }
+
     .nome-setor {
         font-size: 18px;
     }
+
     .descricao-setor {
         font-size: 14px;
     }
+
     .ns-set-btn {
         font-size: 11px;
         padding: 8px 14px;
     }
+
     .BP-STETIC-1 {
         flex-direction: column;
         gap: 8px;
     }
+
     .BP-STETIC-1 h1 {
         font-size: 12px;
     }
+
     .BP-STETIC-1 h1 i {
         margin: 4px;
+    }
+
+    .pos-setores {
+        position: absolute;
+        top: 252%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 96%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .BP-STETIC-1,
+    .BP-STETIC-2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .BP-STETIC-1 h1 {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .BP-STETIC-2 h1 {
+        position: relative;
+        left: auto;
+        margin: 0;
+        font-size: 12px;
     }
 }
 
@@ -305,12 +356,15 @@
     .card-setores {
         height: 160px;
     }
+
     .nome-setor {
         font-size: 16px;
     }
+
     .descricao-setor {
         font-size: 12px;
     }
+
     .ns-set-btn {
         font-size: 10px;
         padding: 6px 12px;

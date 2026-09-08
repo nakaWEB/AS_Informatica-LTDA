@@ -4,17 +4,26 @@
     left: 0;
     width: 100%;
     height: 36.7%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
     padding: 40px 0px;
     background: var(--fundo-serviços);
 }
 
+.serv-cont-positon {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 36.7%;
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+
+}
+
 .servico-card {
-    flex: 1 1 180px;
-    max-width: 19.6% !important;
+    flex: 1 1 100%;
+    max-width: 20% !important;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -94,21 +103,6 @@
     padding: 20px 15px;
 }
 
-@media (max-width: 768px) {
-    .servico-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    } 
-
-    .servico-card:not(:last-child)::after {
-        display: none;
-    }
-
-    .servico-card:last-child {
-        border-bottom: none;
-    }
-}
-
 /*icons*/
 .icon-servi {
     width: 30% !important;
@@ -124,20 +118,25 @@
         height: auto;
         padding: 30px 15px;
     }
+
     .servico-card {
         flex: 1 1 45%;
         max-width: 48% !important;
         margin-bottom: 15px;
     }
+
     .servico-card:not(:last-child)::after {
         display: none;
     }
+
     .servico-frente {
         padding: 20px 15px;
     }
+
     .servico-titulo {
         font-size: 13px;
     }
+
     .icon-servi {
         width: 25% !important;
     }
@@ -145,12 +144,36 @@
 
 /* Reafirma 1 coluna em mobile (sobrescreve o 1024px) */
 @media (max-width: 767px) {
+    .servicos-container {
+        position: absolute;
+        top: 58%;
+        left: 0;
+        width: 93%;
+        height: 15%;
+        background: var(--fundo-serviços);
+    }
+
+    .serv-cont-positon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        padding: 5px 0px;
+        
+    }
+
     .servico-card {
         flex: 1 1 100%;
-        max-width: 100% !important;
+        max-width: 20% !important;
     }
+
     .servico-frente {
         padding: 20px 15px;
+    }
+
+    .icon-servi {
+        width: 50% !important;
     }
 }
 
@@ -158,16 +181,16 @@
     .servico-card {
         margin-bottom: 10px;
     }
+
     .servico-frente {
         padding: 15px 10px;
     }
+
     .servico-titulo {
         font-size: 12px;
     }
+
     .servico-descricao {
         font-size: 12px;
-    }
-    .icon-servi {
-        width: 20% !important;
     }
 }

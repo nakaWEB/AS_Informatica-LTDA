@@ -130,13 +130,17 @@
 
 @media (max-width: 767px) {
     .inc {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         height: auto;
         min-height: 420px;
         padding-bottom: 40px;
     }
     .inc .fundo-inc {
         position: absolute;
+        top: 0;
+        left: 0;
         object-fit: cover;
     }
     .inc .frase-inc-txt {
