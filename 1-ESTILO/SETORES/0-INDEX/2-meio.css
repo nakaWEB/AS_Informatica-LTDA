@@ -259,7 +259,7 @@
 @media (max-width: 767px) {
     .setores {
         position: absolute;
-        top: 45%;
+        top: 25%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -317,10 +317,10 @@
 
     .pos-setores {
         position: absolute;
-        top: 252%;
+        top: 210%;
         left: 50%;
         transform: translateX(-50%);
-        width: 96%;
+        width: 92%;
         height: auto;
         display: flex;
         flex-direction: column;

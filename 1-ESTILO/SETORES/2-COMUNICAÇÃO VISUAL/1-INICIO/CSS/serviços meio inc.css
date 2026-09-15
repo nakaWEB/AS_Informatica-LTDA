@@ -146,7 +146,7 @@
 @media (max-width: 767px) {
     .servicos-container {
         position: absolute;
-        top: 58%;
+        top: 60%;
         left: 0;
         width: 93%;
         height: 15%;
@@ -178,19 +178,5 @@
 }
 
 @media (max-width: 479px) {
-    .servico-card {
-        margin-bottom: 10px;
-    }
 
-    .servico-frente {
-        padding: 15px 10px;
-    }
-
-    .servico-titulo {
-        font-size: 12px;
-    }
-
-    .servico-descricao {
-        font-size: 12px;
-    }
 }

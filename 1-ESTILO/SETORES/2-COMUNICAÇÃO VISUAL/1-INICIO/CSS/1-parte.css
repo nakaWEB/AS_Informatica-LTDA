@@ -133,9 +133,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: auto;
-        min-height: 420px;
-        padding-bottom: 40px;
+        width: 100%;
     }
     .inc .fundo-inc {
         position: absolute;
@@ -153,14 +151,12 @@
         font-size: 14px;
     }
     .inc .frase-inc-txt .inc-2 {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 32px;
-        margin-top: 5px;
     }
     .inc .frase-inc-txt .inc-3 {
-        font-size: 36px;
+        font-size: 29px;
         line-height: 36px;
-        margin-top: 5px;
     }
     .inc .descrição {
         position: relative;
@@ -181,33 +177,9 @@
         padding: 10px 14px !important;
     }
     .inc .vnp-inc-btn {
-        margin-left: 10px;
+        margin-left: 22px;
     }
 }
 
 @media (max-width: 479px) {
-    .inc {
-        min-height: 360px;
-    }
-    .inc .frase-inc-txt .inc-2 {
-        font-size: 24px;
-        line-height: 26px;
-    }
-    .inc .frase-inc-txt .inc-3 {
-        font-size: 28px;
-        line-height: 28px;
-    }
-    .inc .descrição {
-        font-size: 12px;
-    }
-    .inc .ns-inc-btn,
-    .inc .vnp-inc-btn {
-        display: block;
-        width: fit-content;
-        margin: 15px auto 0;
-        text-align: center;
-    }
-    .inc .vnp-inc-btn {
-        margin: 10px auto 0;
-    }
 }

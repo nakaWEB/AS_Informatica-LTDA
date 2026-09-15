@@ -294,19 +294,4 @@
 
 /* Celulares pequenos (até 480px) */
 @media (max-width: 479px) {
-    .footer .frase-do-balacubaco .divog {
-        font-size: 12px;
-    }
-
-    .logo-footer {
-        width: 50%;
-    }
-
-    .footer-links h1 {
-        font-size: 14px;
-    }
-
-    .footer-links p {
-        font-size: 12px;
-    }
 }

@@ -177,9 +177,8 @@
 
 @media (max-width: 767px) {
     .projetos {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 80%;
         width: 100%;
         height: auto;
         padding: 40px 0 60px;
@@ -200,14 +199,15 @@
         height: auto;
         margin: 20px auto 0;
     }
+
     .btn-projetos {
-        width: 55%;
-        margin-left: 5%;
-        margin-top: 10px;
-        padding: 8px 15px;
+        position: absolute;
+        top: 17%;
+        left: 58%;
+        width: 25%;
     }
     .btn-projetos h1 {
-        font-size: 12px;
+        font-size: 11px;
     }
     .carousel-slide {
         min-width: 45%;
@@ -222,21 +222,4 @@
 }
 
 @media (max-width: 479px) {
-    .projetos h1 {
-        font-size: 20px;
-    }
-    .btn-projetos {
-        width: 70%;
-    }
-    .carousel-slide {
-        min-width: 90%;
-        max-width: 90%;
-    }
-    .carousel-slide img {
-        height: 160px;
-    }
-    .carousel-controls button {
-        padding: 6px 18px;
-        font-size: 12px;
-    }
 }

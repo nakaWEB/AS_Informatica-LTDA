@@ -1,0 +1,46 @@
+  <!--MEIO PROJETOS-->
+  <div class="projetos">
+    <h4 style="color: var(--laranja);">EXEMPLARES PRODUZIDOS</h4>
+    <h1 style="color: var(--letras-escuras);">Cortes que </br>
+      transformam</br>
+      ideias</br>
+      em realidade.
+      <p style="font-size: 15px;">Do simples aocomplexo, criamos</br>
+        peças únicas com qualidade, precisão</br>
+        e acabamento impecável.</p>
+    </h1>
+
+    <a href="./comunicação visual projetos e serviços.html" class="btn-projetos">
+      <h1>VER TODOS OS PROJETOS <i class="fa-solid fa-arrow-right"></i></h1>
+    </a>
+
+    <!--CAROCEL SLIDE-->
+    <div class="carroceu-slide">
+      <div class="carousel-container">
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="track">
+            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (1).jpg"
+                alt="Imagem 1"></div>
+            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (4).jpg"
+                alt="Imagem 2"></div>
+            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (5).jpg"
+                alt="Imagem 3"></div>
+            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (6).jpg"
+                alt="Imagem 4"></div>
+            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/liminaria (4).jpeg"
+                alt="Imagem 5"></div>
+            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/liminaria (5).jpeg"
+                alt="Imagem 6"></div>
+          </div>
+        </div>
+
+        <div class="carousel-progress" id="progress"></div>
+
+        <div class="carousel-controls">
+
+          <button style="opacity: 0;" onclick="prevSlide()">◀ Anterior</button>
+          <button style="opacity: 0;" onclick="nextSlide()">Próximo ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
