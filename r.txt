@@ -1,46 +1,97 @@
-  <!--MEIO PROJETOS-->
-  <div class="projetos">
-    <h4 style="color: var(--laranja);">EXEMPLARES PRODUZIDOS</h4>
-    <h1 style="color: var(--letras-escuras);">Cortes que </br>
-      transformam</br>
-      ideias</br>
-      em realidade.
-      <p style="font-size: 15px;">Do simples aocomplexo, criamos</br>
-        peças únicas com qualidade, precisão</br>
-        e acabamento impecável.</p>
-    </h1>
+/* Celulares (até 768px) — 1 coluna */
+@media (max-width: 767px) {
+    .setores {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
 
-    <a href="./comunicação visual projetos e serviços.html" class="btn-projetos">
-      <h1>VER TODOS OS PROJETOS <i class="fa-solid fa-arrow-right"></i></h1>
-    </a>
+    }
 
-    <!--CAROCEL SLIDE-->
-    <div class="carroceu-slide">
-      <div class="carousel-container">
-        <div class="carousel-viewport">
-          <div class="carousel-track" id="track">
-            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (1).jpg"
-                alt="Imagem 1"></div>
-            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (4).jpg"
-                alt="Imagem 2"></div>
-            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (5).jpg"
-                alt="Imagem 3"></div>
-            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/letreiro (6).jpg"
-                alt="Imagem 4"></div>
-            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/liminaria (4).jpeg"
-                alt="Imagem 5"></div>
-            <div class="carousel-slide"><img src="./IMGs/SETORES/CORTE A LASER/PRODUTOS/liminaria (5).jpeg"
-                alt="Imagem 6"></div>
-          </div>
-        </div>
+    .nav-setores {
+        position: absolute;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+        margin-top: auto;
+    }
 
-        <div class="carousel-progress" id="progress"></div>
+    .contein-setores {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        border: solid red 1px;    }
 
-        <div class="carousel-controls">
+    .card-setores {
+        margin-left: 7.5%;
+        width: 85%;
+        height: 180px;
+    }
 
-          <button style="opacity: 0;" onclick="prevSlide()">◀ Anterior</button>
-          <button style="opacity: 0;" onclick="nextSlide()">Próximo ▶</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    .nome-setor {
+        font-size: 18px;
+    }
+
+    .descricao-setor {
+        font-size: 14px;
+    }
+
+    .ns-set-btn {
+        font-size: 11px;
+        padding: 8px 14px;
+    }
+
+    .BP-STETIC-1 {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .BP-STETIC-1 h1 {
+        font-size: 12px;
+    }
+
+    .BP-STETIC-1 h1 i {
+        margin: 4px;
+    }
+
+    .pos-setores {
+        position: absolute;
+        top: 198%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .BP-STETIC-1,
+    .BP-STETIC-2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .BP-STETIC-1 h1 {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .BP-STETIC-2 h1 {
+        position: relative;
+        left: auto;
+        margin: 0;
+        font-size: 12px;
+    }
+}

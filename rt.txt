@@ -5,7 +5,6 @@
     width: 100%;
     height: 100%;
 }
-
 .nav-setores {
     position: absolute;
     top: 0%;
@@ -14,7 +13,6 @@
     width: 94%;
     height: 70%;
 }
-
 .contein-setores {
     position: absolute;
     top: 0;
@@ -26,7 +24,6 @@
     width: 100%;
     height: 70%;
 }
-
 /* ===== CARD ===== */
 .card-setores {
     position: relative;
@@ -38,7 +35,6 @@
     text-decoration: none;
     color: inherit;
 }
-
 /* ===== IMAGEM (fundo) ===== */
 .img-setor {
     position: absolute;
@@ -49,14 +45,12 @@
     z-index: 1;
     border-radius: var(--borda-setores);
 }
-
 .img-setor img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: var(--borda-setores);
 }
-
 .img-setor::after {
     content: '';
     position: absolute;
@@ -71,7 +65,6 @@
             rgba(0, 0, 0, 0.1) 100%);
     z-index: 2;
 }
-
 /* ===== CONTEÚDO (por cima de tudo) ===== */
 .conteudo-card {
     position: absolute;
@@ -85,7 +78,6 @@
     border-radius: var(--borda-setores);
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .nome-setor {
     position: absolute;
     top: 10%;
@@ -94,13 +86,11 @@
     color: var(--letras-brancas);
     font-size: 20px;
 }
-
 .descricao-setor {
     margin: 0 0 16px 0;
     color: #ddd;
     font-size: 15px;
 }
-
 .ns-set-btn {
     position: absolute;
     top: 70%;
@@ -114,7 +104,6 @@
     padding: 10px 16px;
     border-radius: 25px;
 }
-
 .borda-setores {
     position: absolute;
     top: 50%;
@@ -183,111 +172,3 @@
     font-size: 13px;
     color: var(--letras-brancas);
 }
-
-/* ========== RESPONSIVO ========== */
-
-/* Tablets (até 1024px) — 2 colunas */
-@media (max-width: 1023px) {}
-
-/* Celulares (até 768px) — 1 coluna */
-@media (max-width: 768px) {
-    .setores {
-        position: absolute;
-        top: 25%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .nav-setores {
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 94%;
-        height: auto;
-    }
-
-    .contein-setores {
-    position: absolute;
-    top: 0;
-    left: 0;
-    gap: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    }
-
-    /* ===== CARD ===== */
-    .card-setores {
-        margin-left: 7.5%;
-        width: 85%;
-        height: 180px;
-    }
-
-    .nome-setor {
-        font-size: 18px;
-    }
-
-    .descricao-setor {
-        font-size: 14px;
-    }
-
-    .ns-set-btn {
-        font-size: 11px;
-        padding: 8px 14px;
-    }
-
-    .BP-STETIC-1 {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .BP-STETIC-1 h1 {
-        font-size: 12px;
-    }
-
-    .BP-STETIC-1 h1 i {
-        margin: 4px;
-    }
-
-    .pos-setores {
-        position: absolute;
-        top: 234%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .BP-STETIC-1,
-    .BP-STETIC-2 {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: 100%;
-        height: auto;
-        padding: 12px;
-        box-sizing: border-box;
-    }
-
-    .BP-STETIC-1 h1 {
-        font-size: 13px;
-        margin: 0;
-    }
-
-    .BP-STETIC-2 h1 {
-        position: relative;
-        left: auto;
-        margin: 0;
-        font-size: 12px;
-    }
-}
-
-/* Celulares pequenos (até 480px) */
-@media (max-width: 479px) {}

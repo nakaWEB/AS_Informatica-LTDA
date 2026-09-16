@@ -133,18 +133,18 @@
     .inc .frase-inc-txt .inc-2 {
         font-size: 24pt;
         line-height: 24pt;
-        margin-top: 5px;
+        padding: 0 0 30px 0;
     }
     .inc .frase-inc-txt .inc-3 {
         font-size: 28pt;
         line-height: 28pt;
-        margin-top: 5px;
+
     }
     .inc .descrição {
         position: relative;
         top: auto;
         left: auto;
-        margin: 18px 20px 0;
+        margin: -30px 20px 0;
         font-size: 13px;
         line-height: 20px;
     }
