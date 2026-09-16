@@ -129,14 +129,13 @@
 
 /* Tablets (até 1024px) */
 @media (max-width: 1023px) {
-
 }
 
 /* Celulares (até 768px) — footer em coluna */
 @media (max-width: 767px) {
     .footer {
         position: absolute;
-        top: 260%;
+        top: 242%;
         left: 0;
         height: auto;
     }
@@ -247,5 +246,4 @@
 
 /* Celulares pequenos (até 480px) */
 @media (max-width: 479px) {
-
 }

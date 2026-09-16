@@ -99,29 +99,6 @@ body {
 
 /* Tablets e telas menores (até 1024px) */
 @media (max-width: 1024px) {
-    .inc {
-        height: 35%;
-    }
-
-    .inc .frase-inc-txt .inc-2 {
-        font-size: 36px;
-        line-height: 36px;
-    }
-
-    .inc .frase-inc-txt .inc-3 {
-        font-size: 38px;
-        line-height: 38px;
-    }
-
-    .inc .descrição {
-        font-size: 12px;
-        line-height: 18px;
-        top: 72%;
-    }
-
-    .linha-final h1 {
-        font-size: 20px;
-    }
 }
 
 /* Celulares (até 768px) */

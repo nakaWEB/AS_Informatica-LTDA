@@ -45,10 +45,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 16px 0;
+    padding: 0px 0;
     overflow: hidden;
     background: var(--fundo-rodape);
-    height: 90%;
+    height: 100%;
 }
 
 .marquee-row {
@@ -75,26 +75,7 @@ body {
 
 /* ========== RESPONSIVO ========== */
 
-@media (max-width: 1023px) {
-    .inc-servicos .marca {
-        width: 25%;
-    }
-    .marca .logo-marca {
-        width: 100%;
-        object-fit: contain;
-    }
-    .marquee-row img {
-        height: 120px;
-        width: 190px;
-    }
-    .marquee-container {
-        gap: 10px;
-        padding: 12px 0;
-    }
-    .marquee-row {
-        gap: 10px;
-    }
-}
+@media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
     .inc-servicos {
@@ -136,23 +117,4 @@ body {
     }
 }
 
-@media (max-width: 479px) {
-    .inc-servicos .marca {
-        height: 60px;
-    }
-    .marca .logo-marca {
-        height: 50px;
-    }
-    .marquee-row img {
-        height: 85px;
-        width: 135px;
-        border-radius: 6px;
-    }
-    .marquee-container {
-        gap: 8px;
-        padding: 8px 0;
-    }
-    .marquee-row {
-        gap: 8px;
-    }
-}
+@media (max-width: 479px) {}

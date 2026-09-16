@@ -102,28 +102,7 @@
 /* ========== RESPONSIVO ========== */
 
 @media (max-width: 1023px) {
-    .inc .frase-inc-txt .inc-2 {
-        font-size: 38px;
-        line-height: 38px;
-    }
-    .inc .frase-inc-txt .inc-3 {
-        font-size: 40px;
-        line-height: 40px;
-        margin-top: -3%;
-    }
-    .inc .descrição {
-        font-size: 13px;
-        line-height: 20px;
-        top: 72%;
-    }
-    .inc .ns-inc-btn,
-    .inc .vnp-inc-btn {
-        font-size: 10px !important;
-        padding: 8px 10px !important;
-    }
-    .inc .vnp-inc-btn {
-        margin-left: 30%;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -184,28 +163,4 @@
 }
 
 @media (max-width: 479px) {
-    .inc {
-        min-height: 300px;
-    }
-    .inc .frase-inc-txt .inc-2 {
-        font-size: 22px;
-        line-height: 24px;
-    }
-    .inc .frase-inc-txt .inc-3 {
-        font-size: 26px;
-        line-height: 26px;
-    }
-    .inc .descrição {
-        font-size: 12px;
-    }
-    .inc .ns-inc-btn,
-    .inc .vnp-inc-btn {
-        display: block;
-        width: fit-content;
-        margin: 15px auto 0;
-        text-align: center;
-    }
-    .inc .vnp-inc-btn {
-        margin: 10px auto 0;
-    }
 }

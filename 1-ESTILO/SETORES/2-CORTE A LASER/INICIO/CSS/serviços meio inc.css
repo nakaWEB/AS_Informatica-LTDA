@@ -111,42 +111,13 @@
 /* ========== RESPONSIVO ADICIONAL ========== */
 
 @media (max-width: 1023px) {
-    .servicos-container {
-        position: relative;
-        top: auto;
-        left: auto;
-        height: auto;
-        padding: 30px 15px;
-    }
-
-    .servico-card {
-        flex: 1 1 45%;
-        max-width: 48% !important;
-        margin-bottom: 15px;
-    }
-
-    .servico-card:not(:last-child)::after {
-        display: none;
-    }
-
-    .servico-frente {
-        padding: 20px 15px;
-    }
-
-    .servico-titulo {
-        font-size: 13px;
-    }
-
-    .icon-servi {
-        width: 25% !important;
-    }
 }
 
 /* Reafirma 1 coluna em mobile (sobrescreve o 1024px) */
 @media (max-width: 767px) {
     .servicos-container {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 0;
         width: 93%;
         height: 15%;

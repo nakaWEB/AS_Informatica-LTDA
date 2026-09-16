@@ -227,57 +227,7 @@
 
 /* ========== RESPONSIVO ========== */
 
-@media (max-width: 1023px) {
-    .projetos {
-        top: 125%;
-    }
-    .projetos h1 {
-        font-size: 26px;
-    }
-    .carroceu-slide {
-        left: 95%;
-        width: 65%;
-    }
-    .btn-projetos {
-        width: 28%;
-    }
-    .btn-projetos h1 {
-        font-size: 12px;
-    }
-    .carousel-slide {
-        min-width: 30%;
-        max-width: 30%;
-    }
-    .carousel-slide img {
-        height: 200px;
-    }
-    .valores-da-empreza {
-        top: 180%;
-    }
-    .valores-da-empreza h1 {
-        font-size: 26px;
-    }
-    .valores-conteiner {
-        top: 196%;
-        height: auto;
-        min-height: 180px;
-        padding: 20px 0;
-    }
-    .carde-valorise {
-        flex: 1 1 45%;
-        max-width: 48% !important;
-        margin-top: 1%;
-    }
-    .carde-valorise h1 {
-        font-size: 18px;
-    }
-    .carde-valorise h2 {
-        font-size: 13px;
-    }
-    .carde-valorise h3 {
-        font-size: 18px;
-    }
-}
+@media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
     .projetos {
@@ -363,39 +313,4 @@
     }
 }
 
-@media (max-width: 479px) {
-    .projetos h1 {
-        font-size: 20px;
-    }
-    .btn-projetos {
-        width: 70%;
-    }
-    .carousel-slide {
-        min-width: 90%;
-        max-width: 90%;
-    }
-    .carousel-slide img {
-        height: 160px;
-    }
-    .carousel-controls button {
-        padding: 6px 18px;
-        font-size: 12px;
-    }
-    .valores-da-empreza h1 {
-        font-size: 20px;
-    }
-    .carde-valorise {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-        margin-top: 15px;
-    }
-    .carde-valorise h1 {
-        font-size: 18px;
-    }
-    .carde-valorise h2 {
-        font-size: 13px;
-    }
-    .carde-valorise h3 {
-        font-size: 18px;
-    }
-}
+@media (max-width: 479px) {}

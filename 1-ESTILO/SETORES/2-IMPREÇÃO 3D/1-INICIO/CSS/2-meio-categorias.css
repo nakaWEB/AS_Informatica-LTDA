@@ -82,37 +82,9 @@
       background: var(--laranja);
     }
 
-    /* Responsivo */
-    @media (max-width: 900px) {
-      .categorias-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .categorias-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-      }
-      .categorias-titulo {
-        font-size: 22px;
-      }
-    }
-
 /* ========== RESPONSIVO ADICIONAL ========== */
 
-@media (max-width: 1023px) {
-    .meio-1 {
-        top: 75%;
-    }
-    .categorias-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 14px;
-    }
-    .categoria-nome {
-        font-size: 13px;
-    }
-}
+@media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
     .meio-1 {
@@ -150,15 +122,4 @@
     }
 }
 
-@media (max-width: 479px) {
-    .categorias-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    .categorias-titulo {
-        font-size: 16px;
-    }
-    .categoria-nome {
-        font-size: 11px;
-    }
-}
+@media (max-width: 479px) {}

@@ -132,34 +132,7 @@
 /* ========== RESPONSIVO ========== */
 
 @media (max-width: 1023px) {
-    .setores {
-        margin-top: 26%;
-    }
-    .nav-setores {
-        width: 96%;
-        height: auto;
-    }
-    .contein-setores {
-        position: relative;
-        height: auto;
-        gap: 12px;
-        justify-content: center;
-    }
-    .card-setores {
-        width: 48%;
-        height: 220px;
-    }
-    .nome-setor {
-        font-size: 18px;
-    }
-    .descricao-setor {
-        font-size: 14px;
-        top: 32%;
-    }
-    .ns-set-btn {
-        font-size: 9px;
-        padding: 8px 14px;
-    }
+
 }
 
 @media (max-width: 767px) {
@@ -258,17 +231,5 @@
 }
 
 @media (max-width: 479px) {
-    .card-setores {
-        height: 160px;
-    }
-    .nome-setor {
-        font-size: 16px;
-    }
-    .descricao-setor {
-        font-size: 13px;
-    }
-    .ns-set-btn {
-        font-size: 9px;
-        padding: 6px 12px;
-    }
+
 }

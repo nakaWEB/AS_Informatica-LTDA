@@ -193,48 +193,9 @@
       transform: scale(1.2);
     }
 
-    /* Responsivo */
-    @media (max-width: 1300px) {
-      .pd-card { min-width: 200px; max-width: 200px; }
-    }
-    @media (max-width: 1100px) {
-      .pd-card { min-width: 220px; max-width: 220px; }
-    }
-    @media (max-width: 900px) {
-      .pd-card { min-width: 240px; max-width: 240px; }
-    }
-    @media (max-width: 600px) {
-      .pd-card { min-width: 280px; max-width: 280px; }
-      .pd-arrow { display: none; }
-    }
-
 /* ========== RESPONSIVO ADICIONAL ========== */
 
-@media (max-width: 1023px) {
-    .meio-2 {
-        top: 125%;
-    }
-    .pd-container {
-        padding: 24px 16px;
-    }
-    .pd-header h2 {
-        font-size: 20px;
-    }
-    .pd-card {
-        min-width: 200px;
-        max-width: 200px;
-        padding: 12px;
-    }
-    .pd-card-img {
-        height: 140px;
-    }
-    .pd-card-title {
-        font-size: 14px;
-    }
-    .pd-card-price {
-        font-size: 16px;
-    }
-}
+@media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
     .meio-2 {
@@ -271,28 +232,4 @@
     }
 }
 
-@media (max-width: 479px) {
-    .pd-container {
-        padding: 16px 8px;
-    }
-    .pd-header h2 {
-        font-size: 16px;
-    }
-    .pd-card {
-        min-width: 260px;
-        max-width: 260px;
-    }
-    .pd-card-img {
-        height: 140px;
-    }
-    .pd-card-title {
-        font-size: 13px;
-    }
-    .pd-card-price {
-        font-size: 15px;
-    }
-    .pd-card-btn {
-        padding: 6px 14px;
-        font-size: 11px;
-    }
-}
+@media (max-width: 479px) {}

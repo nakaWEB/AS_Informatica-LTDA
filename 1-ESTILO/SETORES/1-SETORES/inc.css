@@ -48,12 +48,6 @@ body {
 /* ========== RESPONSIVO ========== */
 
 @media (max-width: 1023px) {
-    .linha-final h1 {
-        font-size: 22px;
-    }
-    .linha-final .tracado-negro {
-        width: 25%;
-    }
 }
 
 @media (max-width: 767px) {
@@ -78,10 +72,5 @@ body {
 }
 
 @media (max-width: 479px) {
-    .linha-final h1 {
-        font-size: 16px;
-    }
-    .linha-final .tracado-negro {
-        width: 50%;
-    }
+
 }

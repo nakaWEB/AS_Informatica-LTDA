@@ -57,27 +57,7 @@
 
 /* ========== RESPONSIVO ========== */
 
-@media (max-width: 1023px) {
-    .DADOS-PG-SOBRE {
-        height: auto;
-        min-height: 180px;
-        padding: 20px 0;
-    }
-    .carde-dados {
-        flex: 1 1 45%;
-        max-width: 48% !important;
-        margin-top: 1%;
-    }
-    .carde-dados h1 {
-        font-size: 18px;
-    }
-    .carde-dados h2 {
-        font-size: 13px;
-    }
-    .carde-dados h3 {
-        font-size: 18px;
-    }
-}
+@media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
     .DADOS-PG-SOBRE {
@@ -104,19 +84,4 @@
     }
 }
 
-@media (max-width: 479px) {
-    .carde-dados {
-        flex: 1 1 100%;
-        max-width: 100% !important;
-        margin-top: 15px;
-    }
-    .carde-dados h1 {
-        font-size: 18px;
-    }
-    .carde-dados h2 {
-        font-size: 13px;
-    }
-    .carde-dados h3 {
-        font-size: 18px;
-    }
-}
+@media (max-width: 479px) {}

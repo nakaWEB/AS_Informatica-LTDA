@@ -150,29 +150,7 @@
 /* ========== RESPONSIVO ========== */
 
 @media (max-width: 1023px) {
-    .projetos {
-        top: 145%;
-    }
-    .projetos h1 {
-        font-size: 26px;
-    }
-    .carroceu-slide {
-        left: 5%;
-        width: 90%;
-    }
-    .btn-projetos {
-        width: 35%;
-    }
-    .btn-projetos h1 {
-        font-size: 12px;
-    }
-    .carousel-slide {
-        min-width: 30%;
-        max-width: 30%;
-    }
-    .carousel-slide img {
-        height: 200px;
-    }
+
 }
 
 @media (max-width: 767px) {

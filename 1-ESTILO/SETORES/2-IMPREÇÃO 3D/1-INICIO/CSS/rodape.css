@@ -1,6 +1,6 @@
 .footer {
     position: absolute;
-    top: 207.4%;
+    top: 220.4%;
     left: 0;
     background: var(--fundo-rodape);
     width: 100%;
@@ -129,9 +129,7 @@
 /* ========== RESPONSIVO ========== */
 
 /* Tablets (até 1024px) */
-@media (max-width: 1023px) {
-
-}
+@media (max-width: 1023px) {}
 
 /* Celulares (até 768px) — footer em coluna */
 @media (max-width: 767px) {
@@ -247,6 +245,4 @@
 }
 
 /* Celulares pequenos (até 480px) */
-@media (max-width: 479px) {
-
-}
+@media (max-width: 479px) {}
