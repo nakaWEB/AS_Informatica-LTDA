@@ -149,12 +149,14 @@
 
 /* ========== RESPONSIVO ========== */
 
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+
+}
 
 @media (max-width: 767px) {
     .projetos {
         position: absolute;
-        top: 80%;
+        top: 61%;
         width: 100%;
         height: auto;
         padding: 40px 0 60px;
@@ -197,4 +199,5 @@
     }
 }
 
-@media (max-width: 479px) {}
+@media (max-width: 479px) {
+}

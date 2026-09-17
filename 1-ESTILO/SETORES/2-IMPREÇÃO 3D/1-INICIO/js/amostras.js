@@ -4,15 +4,15 @@
     const allProducts = [
       { id: 1,  name: "Dragão Ancião",           price: "R$ 149,90", img: "https://images.unsplash.com/photo-1577493340887-b7bfff550145?w=400&h=400&fit=crop", badge: "Mais Vendido" },
       { id: 2,  name: "Grogu (Baby Yoda)",       price: "R$ 89,90",  img: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=400&h=400&fit=crop", badge: "Novo" },
-      { id: 3,  name: "Gato Geométrico",           price: "R$ 59,90",  img: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop", badge: "" },
+      { id: 3,  name: "Gato Geométrico",           price: "R$ 59,90",  img: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop", badge: "Novo" },
       { id: 4,  name: "Caveira Porta-Treco",       price: "R$ 49,90",  img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop", badge: "Promoção" },
-      { id: 5,  name: "Engrenagem Helicoidal",     price: "R$ 39,90",  img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop", badge: "" },
+      { id: 5,  name: "Engrenagem Helicoidal",     price: "R$ 39,90",  img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop", badge: "Novo" },
       { id: 6,  name: "Robô Articulado",           price: "R$ 129,90", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop", badge: "Novo" },
-      { id: 7,  name: "Vaso de Flor Moderno",      price: "R$ 69,90",  img: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop", badge: "" },
+      { id: 7,  name: "Vaso de Flor Moderno",      price: "R$ 69,90",  img: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop", badge: "Novo" },
       { id: 8,  name: "Capacete Mandaloriano",     price: "R$ 199,90", img: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=400&h=400&fit=crop", badge: "Exclusivo" },
-      { id: 9,  name: "Dinossauro T-Rex",          price: "R$ 79,90",  img: "https://images.unsplash.com/photo-1569000972087-8d6c0b7c6e4a?w=400&h=400&fit=crop", badge: "" },
+      { id: 9,  name: "Dinossauro T-Rex",          price: "R$ 79,90",  img: "https://images.unsplash.com/photo-1569000972087-8d6c0b7c6e4a?w=400&h=400&fit=crop", badge: "Novo" },
       { id: 10, name: "Luminária Lua",             price: "R$ 99,90",  img: "https://images.unsplash.com/photo-1532693322450-2cb5c511067d?w=400&h=400&fit=crop", badge: "Mais Vendido" },
-      { id: 11, name: "Suporte Headset",           price: "R$ 45,90",  img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop", badge: "" },
+      { id: 11, name: "Suporte Headset",           price: "R$ 45,90",  img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop", badge: "Novo" },
       { id: 12, name: "Organizador de Cabos",      price: "R$ 34,90",  img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=400&fit=crop", badge: "Promoção" }
     ];
 

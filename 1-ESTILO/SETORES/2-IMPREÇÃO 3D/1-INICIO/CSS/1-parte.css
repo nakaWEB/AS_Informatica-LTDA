@@ -153,8 +153,8 @@ body {
 @media (max-width: 767px) {
     .inc {
         position: relative;
-        height: auto;
-        min-height: 380px;
+        width: 100%;
+        height: 43%;
         padding-bottom: 40px;
     }
     .inc .fundo-inc {
@@ -166,6 +166,25 @@ body {
         height: 100%;
         object-fit: cover;
     }
+
+            .inc .inf-filter {
+        position: absolute;
+        top: 0;
+        left: 8%;
+        height: 100%;
+        opacity: 0;
+    }
+
+        .impostor {
+        position: absolute;
+        top: 0px;
+        left: 130%;
+        transform: translateX(-100%);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
     .inc .frase-inc-txt {
         position: relative;
         top: auto;
@@ -173,43 +192,39 @@ body {
         padding: 50px 20px 0;
     }
     .inc .frase-inc-txt .inc-1 {
-        font-size: 11pt;
+        font-size: 12px;
     }
+
     .inc .frase-inc-txt .inc-2 {
-        font-size: 24pt;
-        line-height: 24pt;
-        margin-top: 5px;
+        font-size: 28px;
+        line-height: 32px;
+        padding: 10px 0 30px 0;
     }
+
     .inc .frase-inc-txt .inc-3 {
-        font-size: 28pt;
-        line-height: 28pt;
-        margin-top: 5px;
+        font-size: 32px;
+        line-height: 28px;
+        padding: 40px 0 30px 0;
     }
+
     .inc .descrição {
         position: relative;
         top: auto;
         left: auto;
-        margin: 20px 20px 0;
+        margin: -30px 20px 20px;
         font-size: 13px;
         line-height: 20px;
     }
+
     .inc .ns-inc-btn,
-    .inc .vp-inc-btn,
     .inc .vnp-inc-btn {
         position: relative;
         top: auto;
         left: auto;
         display: inline-block;
-        margin: 20px 8px 0 20px;
+        margin: 10px 10px 0 20px;
         font-size: 11px !important;
         padding: 10px 14px !important;
-    }
-    .inc .vp-inc-btn {
-        margin-left: 8px;
-        font-size: 13px !important;
-    }
-    .inc .vnp-inc-btn {
-        margin-left: 8px;
     }
 }
 

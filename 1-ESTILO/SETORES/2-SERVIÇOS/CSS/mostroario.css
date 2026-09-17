@@ -1,20 +1,16 @@
-body {
+/*body {
     background: var(--fundo-rodape);
-}
+}*/
 
 .inc-servicos .marca {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
-    height: 100%;
-    background: var(--fundo-rodape);
-    clip-path: polygon(
-        0% 0%,
-        100% 0%,
-        70% 100%,
-        0% 100%
-    );
+    width: 100%;
+    height: 120%;
+    margin-top: -10%;
+    z-index: -1;
+    /*background: var(--fundo-rodape);*/
 }
 
 .marca .logo-marca {
@@ -22,7 +18,8 @@ body {
     top: 0%;
     left: 0%;
     height: 100%;
-}
+    width: 100%;
+    }
 
 .inc-servicos {
     position: absolute;
@@ -48,6 +45,7 @@ body {
     padding: 0px 0;
     overflow: hidden;
     background: var(--fundo-rodape);
+
     height: 100%;
 }
 
@@ -59,8 +57,8 @@ body {
 }
 
 .marquee-row img {
-    height: 140px;
-    width: 220px;
+    height: 90px;
+    width: 210px;
     object-fit: cover;
     border-radius: 12px;
     flex-shrink: 0;
@@ -78,37 +76,48 @@ body {
 @media (max-width: 1023px) {}
 
 @media (max-width: 767px) {
+        .impostor {
+        position: absolute;
+        top: 0px;
+        left: 130%;
+        transform: translateX(-100%);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
     .inc-servicos {
         position: relative;
         top: auto;
         left: auto;
         width: 100%;
-        height: auto;
-        min-height: 400px;
-        padding: 20px 0 40px;
+        height: 100%;
+        padding: 40px 0 40px;
     }
     .inc-servicos .marca {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 80px;
         clip-path: none;
         background: transparent;
         text-align: center;
         margin-bottom: 15px;
+        z-index: -1;
     }
     .marca .logo-marca {
         position: relative;
-        height: 60px;
-        width: auto;
+        width: 100%;
+        height: 95%;
         left: auto;
         top: auto;
         display: block;
         margin: 0 auto;
     }
     .marquee-container {
-        height: auto;
+        height: 100%;
         padding: 10px 0;
-        gap: 10px;
+        background: none;
     }
     .marquee-row img {
         height: 100px;

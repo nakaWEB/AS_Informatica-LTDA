@@ -61,12 +61,12 @@
 
 @media (max-width: 767px) {
     .DADOS-PG-SOBRE {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 44%;
+        left: 0;
         width: 100%;
         height: auto;
-        padding: 30px 15px;
+
     }
     .carde-dados {
         flex: 1 1 45%;

@@ -135,7 +135,7 @@
 @media (max-width: 767px) {
     .footer {
         position: absolute;
-        top: 327%;
+        top: 150%;
         left: 0;
         height: auto;
     }

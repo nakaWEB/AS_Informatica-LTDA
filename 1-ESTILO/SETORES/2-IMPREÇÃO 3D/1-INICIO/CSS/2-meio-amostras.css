@@ -216,6 +216,7 @@
     .pd-shuffle-btn {
         font-size: 13px;
         padding: 8px 20px;
+
     }
     .pd-card {
         min-width: 260px;
@@ -229,6 +230,7 @@
         width: 32px;
         height: 32px;
         font-size: 16px;
+        margin: 60px 0 0 0;
     }
 }
 

@@ -23,6 +23,14 @@
     font-size: 32px;
 }
 
+.guyaru {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15%;
+    filter: invert(0.12);
+}
+
 .carroceu-slide {
     position: absolute;
     top: 2%;
@@ -231,15 +239,14 @@
 
 @media (max-width: 767px) {
     .projetos {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 55.6%;
+        left: 0;
         width: 100%;
         height: auto;
-        padding: 40px 0 60px;
     }
     .projetos h4 {
-        margin-top: 0;
+        margin-top: 15px;
         margin-left: 5%;
     }
     .projetos h1 {
@@ -275,24 +282,23 @@
         margin-top: 15px;
     }
     .valores-da-empreza {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 100.2%;
+        left: 0;
         width: 100%;
         height: auto;
-        padding: 30px 15px;
     }
     .valores-da-empreza h4 {
-        margin-top: 0;
+        margin-top: 10px;
     }
     .valores-da-empreza h1 {
         margin-top: 5px;
         font-size: 24px;
     }
     .valores-conteiner {
-        position: relative;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 110%;
+        left: 0;
         width: 100%;
         height: auto;
         padding: 30px 15px;
@@ -311,6 +317,14 @@
     .carde-valorise h3 {
         font-size: 16px;
     }
+
+    .guyaru {
+    position: absolute;
+    top: 5%;
+    left: 67%;
+    width: 30%;
+    filter: invert(0.2);
+}
 }
 
 @media (max-width: 479px) {}
