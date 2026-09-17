@@ -1,97 +1,18 @@
-/* Celulares (até 768px) — 1 coluna */
-@media (max-width: 767px) {
-    .setores {
-        position: absolute;
-        top: 25%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin-top: 20px;
+      <h1 class="inc-1">
+        SUA MARCA, EM GRANDES FORMATOS.
+      </h1>
+      <h2 class="inc-2">
+        Comunicação</br>
+        Visual</br>
+      </h2>
+      <h3 class="inc-3">
+        que comunica,</br>
+        conecta e destaca.
+      </h3>
+    </div>
 
-    }
-
-    .nav-setores {
-        position: absolute;
-        top: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        height: auto;
-        margin-top: auto;
-    }
-
-    .contein-setores {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        border: solid red 1px;    }
-
-    .card-setores {
-        margin-left: 7.5%;
-        width: 85%;
-        height: 180px;
-    }
-
-    .nome-setor {
-        font-size: 18px;
-    }
-
-    .descricao-setor {
-        font-size: 14px;
-    }
-
-    .ns-set-btn {
-        font-size: 11px;
-        padding: 8px 14px;
-    }
-
-    .BP-STETIC-1 {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .BP-STETIC-1 h1 {
-        font-size: 12px;
-    }
-
-    .BP-STETIC-1 h1 i {
-        margin: 4px;
-    }
-
-    .pos-setores {
-        position: absolute;
-        top: 198%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 92%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .BP-STETIC-1,
-    .BP-STETIC-2 {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: 100%;
-        height: auto;
-        padding: 12px;
-        box-sizing: border-box;
-    }
-
-    .BP-STETIC-1 h1 {
-        font-size: 13px;
-        margin: 0;
-    }
-
-    .BP-STETIC-2 h1 {
-        position: relative;
-        left: auto;
-        margin: 0;
-        font-size: 12px;
-    }
-}
+    <h3 class="descrição">
+      Soluções completas em comunicação visual </br>
+      para valorizar a sua marca e fortalecer </br>
+      a presença do seu negócio.
+    </h3>
