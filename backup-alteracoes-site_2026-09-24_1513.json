@@ -1,0 +1,97 @@
+{
+  "app": "gerenciador-alteracoes-site",
+  "versao": 1,
+  "exportadoEm": "2026-09-24T18:13:48.087Z",
+  "paginas": [
+    {
+      "id": 1790267635783,
+      "name": "sobre a loja",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:55.783Z",
+      "updatedAt": "2026-09-24T16:58:56.373Z",
+      "pendente": "inc - dados - imgs antigas carrocel - rodape 2.0 - textos e historia\nmobile\ncarrocel - espaçamento gap/margin-top (position relative)",
+      "feito": ""
+    },
+    {
+      "id": 1790267629870,
+      "name": "setores",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:49.870Z",
+      "updatedAt": "2026-09-24T16:54:20.473Z",
+      "pendente": "setores - imagens - rodape 2.0 - logo para index\nmobile:\ncardes setor - rodape top - \n",
+      "feito": ""
+    },
+    {
+      "id": 1790267623745,
+      "name": "serviços feitos",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:43.745Z",
+      "updatedAt": "2026-09-24T16:51:19.617Z",
+      "pendente": "imagens - rodape 2.0 - logo para index",
+      "feito": ""
+    },
+    {
+      "id": 1790267610356,
+      "name": "impreção 3d prejetos",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:30.356Z",
+      "updatedAt": "2026-09-24T16:50:04.205Z",
+      "pendente": "criar",
+      "feito": ""
+    },
+    {
+      "id": 1790267600021,
+      "name": "impreção 3d",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:20.021Z",
+      "updatedAt": "2026-09-24T16:49:58.132Z",
+      "pendente": "inc - imagens - produtos - logo para index - rodape 2.0\nMobile:\nseta carrocel",
+      "feito": ""
+    },
+    {
+      "id": 1790267591571,
+      "name": "corte a laser projetos",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:11.571Z",
+      "updatedAt": "2026-09-24T16:47:18.993Z",
+      "pendente": "criar (base comuni visual)",
+      "feito": ""
+    },
+    {
+      "id": 1790267580330,
+      "name": "corte a laser",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:33:00.330Z",
+      "updatedAt": "2026-09-24T16:45:56.735Z",
+      "pendente": "inc - imagens - icones e descrição - rodape 2.0 - logo para index\nmobile:\ninc - carrocel",
+      "feito": ""
+    },
+    {
+      "id": 1790267564701,
+      "name": "comunicação visu projetos",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:32:44.701Z",
+      "updatedAt": "2026-09-24T16:43:38.066Z",
+      "pendente": "inc - imagens - projetos - rodape 2.0 - logo para index\nmobile:\naltura serviços",
+      "feito": ""
+    },
+    {
+      "id": 1790267543869,
+      "name": "comunicação visu.html",
+      "status": "grave",
+      "createdAt": "2026-09-24T16:32:23.869Z",
+      "updatedAt": "2026-09-24T17:51:46.054Z",
+      "pendente": "imagens - inc - rodape 2.0\nmobile:\ncarrocel - btn serviços",
+      "feito": "icones - descriçoes"
+    },
+    {
+      "id": 1790267438258,
+      "name": "index.html",
+      "status": "moderado",
+      "createdAt": "2026-09-24T16:30:38.258Z",
+      "updatedAt": "2026-09-24T17:20:00.760Z",
+      "pendente": "imagens - adicionar setores - ",
+      "feito": "posição rodape - responcivo - position relative - link segunda coluna rodape"
+    }
+  ]
+}
