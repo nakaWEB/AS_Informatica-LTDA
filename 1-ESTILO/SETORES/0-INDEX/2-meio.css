@@ -3,28 +3,28 @@
     top: 45%;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .nav-setores {
-    position: absolute;
-    top: 0%;
+    position: relative;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 94%;
-    height: 70%;
+    height: auto;
 }
 
 .contein-setores {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 0;
+    left: -2%;
     gap: 8px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    height: 70%;
+    height: auto;
 }
 
 /* ===== CARD ===== */
@@ -33,7 +33,7 @@
     overflow: hidden;
     display: block;
     width: 24.4%;
-    height: 48%;
+    height: 160px;
     border-radius: var(--borda-setores);
     text-decoration: none;
     color: inherit;
@@ -128,12 +128,12 @@
 }
 
 .pos-setores {
-    position: absolute;
-    top: 78%;
+    position: relative;
     left: 50%;
+    margin-top: 1%;
     transform: translateX(-50%);
-    width: 98%;
-    height: 7%;
+    width: 94%;
+    height: 40px;
     display: grid;
 }
 
@@ -193,37 +193,28 @@
 @media (max-width: 768px) {
     .setores {
         position: absolute;
-        top: 25%;
+        /* era absolute com top 25% */
+        top: 27%;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
-    .nav-setores {
-        position: absolute;
-        top: 0%;
-        left: 50%;
-        transform: translateX(-50%);
+    .setores .nav-setores {
         width: 94%;
         height: auto;
     }
 
     .contein-setores {
-    position: absolute;
-    top: 0;
-    left: 0;
-    gap: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    height: auto;
+        position: relative; /* era absolute com height auto — quebrava o fluxo */
+        top: 0;
+        left: -5%;
+        width: 100%;
+        height: auto;
     }
 
-    /* ===== CARD ===== */
     .card-setores {
-        margin-left: 7.5%;
-        width: 85%;
+        width: 100%;
         height: 180px;
     }
 
@@ -240,33 +231,20 @@
         padding: 8px 14px;
     }
 
-    .BP-STETIC-1 {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .BP-STETIC-1 h1 {
-        font-size: 12px;
-    }
-
-    .BP-STETIC-1 h1 i {
-        margin: 4px;
-    }
-
+    /* ===== pos-setores no mobile: continua depois do nav, empilhado ===== */
     .pos-setores {
-        position: absolute;
-        top: 234%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
+        position: relative;
+        width: 94%;
         height: auto;
         display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
     .BP-STETIC-1,
     .BP-STETIC-2 {
         position: relative;
+        /* era absolute — agora empilham no fluxo */
         top: auto;
         left: auto;
         transform: none;
@@ -276,13 +254,23 @@
         box-sizing: border-box;
     }
 
+    .BP-STETIC-1 {
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .BP-STETIC-1 h1 {
         font-size: 13px;
         margin: 0;
     }
 
+    .BP-STETIC-1 h1 i {
+        margin: 4px;
+    }
+
     .BP-STETIC-2 h1 {
         position: relative;
+        /* era absolute */
         left: auto;
         margin: 0;
         font-size: 12px;

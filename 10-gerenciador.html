@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerenciador de Alterações do Site</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#273549;
+    --text:#e2e8f0; --muted:#94a3b8; --border:#334155;
+    --red:#ef4444; --yellow:#f59e0b; --green:#22c55e;
+    --accent:#3b82f6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+  body{background:var(--bg);color:var(--text);min-height:100vh;padding:20px}
+  header{max-width:1100px;margin:0 auto 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  h1{font-size:1.4rem;display:flex;align-items:center;gap:10px}
+  .subtitle{color:var(--muted);font-size:.85rem;margin-top:4px}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap}
+  button{cursor:pointer;border:none;border-radius:8px;padding:10px 16px;font-size:.9rem;font-weight:600;transition:.15s}
+  button:hover{filter:brightness(1.15)}
+  .btn-save{background:var(--accent);color:#fff}
+  .btn-import{background:var(--panel2);color:var(--text);border:1px solid var(--border)}
+  .btn-add{background:var(--green);color:#06281a}
+  .stats{display:flex;gap:14px;flex-wrap:wrap;margin:0 auto 20px;max-width:1100px}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:10px 18px;font-size:.85rem;display:flex;align-items:center;gap:8px}
+  .stat b{font-size:1.2rem}
+  .dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+  .dot.r{background:var(--red)} .dot.y{background:var(--yellow)} .dot.g{background:var(--green)}
+  .container{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;display:flex;gap:14px;align-items:flex-start}
+  .status-col{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .status-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;cursor:pointer;user-select:none;border:2px solid transparent;transition:.15s}
+  .status-icon.r{background:rgba(239,68,68,.15);color:var(--red);border-color:var(--red)}
+  .status-icon.y{background:rgba(245,158,11,.15);color:var(--yellow);border-color:var(--yellow)}
+  .status-icon.g{background:rgba(34,197,94,.15);color:var(--green);border-color:var(--green)}
+  .status-icon:hover{transform:scale(1.1)}
+  .status-label{font-size:.65rem;color:var(--muted);text-align:center;max-width:60px}
+  .info-col{flex:1;min-width:0}
+  .page-name{font-size:1.05rem;font-weight:700;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .page-name input{background:var(--panel2);border:1px solid var(--border);border-radius:6px;color:var(--text);padding:5px 10px;font-size:.95rem;width:240px}
+  .datetime{font-size:.75rem;color:var(--muted)}
+  .comments{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+  .comments textarea{background:var(--panel2);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 10px;font-size:.85rem;width:100%;resize:vertical;font-family:inherit}
+  .comments textarea:focus{outline:none;border-color:var(--accent)}
+  .ta-pendente{min-height:55px;border-left:3px solid var(--yellow)!important}
+  .ta-feito{min-height:55px;border-left:3px solid var(--green)!important}
+  .comment-tags{display:flex;gap:14px;font-size:.72rem;color:var(--muted)}
+  .actions{display:flex;flex-direction:column;gap:8px}
+  .btn-del{background:transparent;color:var(--red);border:1px solid var(--red);padding:6px 12px;font-size:.75rem}
+  .btn-del:hover{background:rgba(239,68,68,.1)}
+  .empty{text-align:center;color:var(--muted);padding:50px 0;font-size:.95rem}
+  .toast{position:fixed;bottom:24px;right:24px;background:var(--green);color:#06281a;padding:12px 20px;border-radius:10px;font-weight:700;font-size:.9rem;opacity:0;transform:translateY(20px);transition:.3s;pointer-events:none}
+  .toast.show{opacity:1;transform:translateY(0)}
+  .search-box{max-width:1100px;margin:0 auto 16px}
+  .search-box input{width:100%;background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:11px 16px;color:var(--text);font-size:.9rem}
+  .search-box input:focus{outline:none;border-color:var(--accent)}
+  kbd{background:var(--panel2);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:.75rem}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🛠️ Gerenciador de Alterações do Site</h1>
+    <div class="subtitle">Clique no ícone de status para alternar: ❌ grave → ⚠️ moderado → ✅ ok • <kbd>Ctrl</kbd>+<kbd>S</kbd> para salvar/exportar</div>
+  </div>
+  <div class="toolbar">
+    <button class="btn-add" onclick="addPage()">+ Adicionar Página</button>
+    <button class="btn-save" onclick="saveBackup()">💾 Salvar (Exportar)</button>
+    <button class="btn-import" onclick="document.getElementById('importFile').click()">📂 Importar</button>
+    <input type="file" id="importFile" accept=".json" style="display:none" onchange="importBackup(event)">
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><span class="dot r"></span> Grave: <b id="countR">0</b></div>
+  <div class="stat"><span class="dot y"></span> Moderado: <b id="countY">0</b></div>
+  <div class="stat"><span class="dot g"></span> OK: <b id="countG">0</b></div>
+  <div class="stat">📄 Total de páginas: <b id="countT">0</b></div>
+</div>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="🔍 Pesquisar página..." oninput="render()">
+</div>
+
+<div class="container" id="list"></div>
+<div class="empty" id="emptyMsg">Nenhuma página cadastrada. Clique em "+ Adicionar Página".</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const STORAGE_KEY = 'site_alteracoes_v1';
+let pages = [];
+
+// ---------- Carregar / persistir local ----------
+function load(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw) pages = JSON.parse(raw);
+  }catch(e){ pages = []; }
+}
+function persist(){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(pages));
+}
+
+// ---------- Status ----------
+const STATUS = [
+  {key:'grave',     icon:'❗', cls:'r', label:'Grave'},
+  {key:'moderado',  icon:'⚠️', cls:'y', label:'Moderado'},
+  {key:'ok',        icon:'✅', cls:'g', label:'OK'}
+];
+function statusIndex(s){ return Math.max(0, STATUS.findIndex(x=>x.key===s)); }
+function cycleStatus(id){
+  const p = pages.find(p=>p.id===id);
+  if(!p) return;
+  const next = (statusIndex(p.status)+1) % STATUS.length;
+  p.status = STATUS[next].key;
+  p.updatedAt = new Date().toISOString();
+  persist(); render();
+}
+
+// ---------- CRUD ----------
+function addPage(){
+  const name = prompt('Nome da página (ex: index.html, orcamento.html):');
+  if(!name || !name.trim()) return;
+  pages.unshift({
+    id: Date.now(),
+    name: name.trim(),
+    status: 'grave',
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+    pendente: '',
+    feito: ''
+  });
+  persist(); render();
+}
+function removePage(id){
+  if(!confirm('Excluir esta página do gerenciador?')) return;
+  pages = pages.filter(p=>p.id!==id);
+  persist(); render();
+}
+function updateField(id, field, value){
+  const p = pages.find(p=>p.id===id);
+  if(!p) return;
+  p[field] = value;
+  p.updatedAt = new Date().toISOString();
+  persist(); updateStats();
+}
+function updateName(id, value){
+  const p = pages.find(p=>p.id===id);
+  if(!p) return;
+  p.name = value;
+  p.updatedAt = new Date().toISOString();
+  persist();
+}
+
+// ---------- Render ----------
+function fmtDate(iso){
+  const d = new Date(iso);
+  return d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+}
+function render(){
+  const q = (document.getElementById('search').value||'').toLowerCase();
+  const list = document.getElementById('list');
+  const filtered = pages.filter(p=>p.name.toLowerCase().includes(q));
+  document.getElementById('emptyMsg').style.display = pages.length ? 'none' : 'block';
+  list.innerHTML = filtered.map(p=>{
+    const s = STATUS[statusIndex(p.status)];
+    return `
+    <div class="card">
+      <div class="status-col">
+        <div class="status-icon ${s.cls}" title="Clique para alterar o status" onclick="cycleStatus(${p.id})">${s.icon}</div>
+        <div class="status-label">${s.label}</div>
+      </div>
+      <div class="info-col">
+        <div class="page-name">
+          <input value="${escapeHtml(p.name)}" onchange="updateName(${p.id}, this.value)" title="Nome da página (editável)">
+          <span class="datetime">🕒 Atualizado em: ${fmtDate(p.updatedAt)}</span>
+        </div>
+        <div class="comments">
+          <div class="comment-tags"><span style="color:var(--yellow)">⬤ A ALTERAR / PENDENTE</span></div>
+          <textarea class="ta-pendente" placeholder="Descreva o que precisa ser alterado nesta página..." oninput="updateField(${p.id},'pendente',this.value)">${escapeHtml(p.pendente)}</textarea>
+          <div class="comment-tags"><span style="color:var(--green)">⬤ JÁ ALTERADO / CONCLUÍDO</span></div>
+          <textarea class="ta-feito" placeholder="Descreva o que já foi alterado..." oninput="updateField(${p.id},'feito',this.value)">${escapeHtml(p.feito)}</textarea>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn-del" onclick="removePage(${p.id})">🗑 Excluir</button>
+      </div>
+    </div>`;
+  }).join('');
+  updateStats();
+}
+function updateStats(){
+  document.getElementById('countR').textContent = pages.filter(p=>p.status==='grave').length;
+  document.getElementById('countY').textContent = pages.filter(p=>p.status==='moderado').length;
+  document.getElementById('countG').textContent = pages.filter(p=>p.status==='ok').length;
+  document.getElementById('countT').textContent = pages.length;
+}
+function escapeHtml(s){
+  return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ---------- Exportar / Importar ----------
+function saveBackup(){
+  persist();
+  const data = {
+    app: 'gerenciador-alteracoes-site',
+    versao: 1,
+    exportadoEm: new Date().toISOString(),
+    paginas: pages
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  const d = new Date();
+  const pad = n=>String(n).padStart(2,'0');
+  a.href = URL.createObjectURL(blob);
+  a.download = `backup-alteracoes-site_${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}_${pad(d.getHours())}${pad(d.getMinutes())}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  toast('💾 Backup exportado com sucesso!');
+}
+function importBackup(ev){
+  const file = ev.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e=>{
+    try{
+      const data = JSON.parse(e.target.result);
+      const arr = data.paginas || data; // aceita formato novo ou array puro
+      if(!Array.isArray(arr)) throw new Error('formato inválido');
+      if(!confirm(`Importar ${arr.length} página(s)? Isso substituirá os dados atuais.`)) return;
+      pages = arr.map(p=>({
+        id: p.id || Date.now()+Math.random(),
+        name: p.name || 'Sem nome',
+        status: ['grave','moderado','ok'].includes(p.status) ? p.status : 'grave',
+        createdAt: p.createdAt || new Date().toISOString(),
+        updatedAt: p.updatedAt || new Date().toISOString(),
+        pendente: p.pendente || '',
+        feito: p.feito || ''
+      }));
+      persist(); render();
+      toast('📂 Backup importado com sucesso!');
+    }catch(err){
+      alert('❌ Arquivo inválido. Selecione um backup .json exportado por esta página.');
+    }
+    ev.target.value = '';
+  };
+  reader.readAsText(file);
+}
+
+// ---------- Atalho Ctrl+S ----------
+document.addEventListener('keydown', e=>{
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase()==='s'){
+    e.preventDefault();
+    saveBackup();
+  }
+});
+
+// ---------- Toast ----------
+let toastTimer;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 2500);
+}
+
+// ---------- Init ----------
+load();
+render();
+</script>
+</body>
+</html>
