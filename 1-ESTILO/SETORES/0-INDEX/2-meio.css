@@ -11,7 +11,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 94%;
+    width: 99%;
     height: auto;
 }
 
@@ -132,7 +132,7 @@
     left: 50%;
     margin-top: 1%;
     transform: translateX(-50%);
-    width: 94%;
+    width: 99%;
     height: 40px;
     display: grid;
 }

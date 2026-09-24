@@ -1,6 +1,6 @@
 .footer {
     position: absolute;
-    top: 133%;
+    top: 143%;
     left: 0;
     background: var(--fundo-rodape);
     width: 100%;
@@ -8,23 +8,31 @@
 }
 .footer .frase-do-balacubaco {
     width: 100%;
-    height: 32%;
+    height: 20%;
     border-bottom: 1px solid #ffc400;
     border-top: 1px solid #ffc400;
     position: absolute;
     left: 0;
     top: 0;
-    border-bottom-right-radius: solid 2px red;
 }
-.footer .frase-do-balacubaco img {
-    width: 50%;
+.footer .frase-do-balacubaco .img-balacuda {
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
 }
+
+.logo-footer1 {
+    position: absolute;
+    top: 050%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+}
+
 .footer .frase-do-balacubaco .divog {
-    margin-left: 50%;
-    margin-top: 4%;
+    margin-left: 60%;
+    margin-top: 2%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -33,12 +41,13 @@
     text-decoration: none;
     background: var(--laranja);
     color: var(--letras-escuras) !important;
-    padding: 10px 22px !important;
+    padding: 10px 10px !important;
     border-radius: 25px !important;
     transition: all 0.3s ease !important;
     position: absolute;
     top: 28%;
-    left: 74%;
+    left: 72%;
+    transform: translateX(100%);
     align-items: center;
     text-align: center;
     font-size: 13px !important;
